@@ -23,14 +23,6 @@ module.exports = {
         ],
         sidebar: [
             {
-                title: "Welcome!",
-                collapsable: false,
-                sidebarDepth: 1,
-                children: [
-                    "/Ponjo-API.md"
-                ]
-            },
-            {
                 title: "Ponjo API",
                 collapsable: true,
                 sidebarDepth: 1,
