@@ -1,0 +1,127 @@
+// TODO: make the hamburger menu appear on the right instead of the left
+
+body {
+  min-height: 100vh !important;
+  background-color: $borderColor !important;
+};
+
+.page-nav {
+  display: none !important;
+};
+
+.theme-default-content:not(.custom) {
+  max-width: 1100px !important;
+};
+
+.theme-container, .sidebar, .navbar, .links {
+  background-color: #151618 !important;
+};
+
+.search-box {
+  display none !important;
+};
+
+hr {
+  border: 0;
+  border-top: 1px solid $textColor;
+}
+
+// This is causing some formatting issues for mobile devices, remove?
+// Lets keep this, but just with a media query for mobile
+@media screen and (min-width: $MQMobile) {
+  .navbar {
+    padding-left: 1rem !important;
+  }
+};
+
+.nav-link {
+  color: $textColorSecondary !important;
+};
+
+.sidebar-heading {
+  color: $accentColor !important;
+};
+
+.sidebar-links .active {
+  color: $textColor !important;
+  border-left-color: $textColor !important;
+};
+
+a.nav-link:hover {
+  color: $accentColor !important;
+  border: none !important;
+};
+
+.site-name {
+  color: #f0f6fc !important;
+  font-size 1rem !important;
+  line-height: 1.5 !important;
+};
+
+.home-link {
+  height: 2rem !important;
+};
+
+.logo {
+  margin-top: 0.25rem !important;
+  margin-right: 0.75rem !important;
+  min-width 32px !important;
+  width: 32px !important;
+  height: 32px !important;
+};
+
+.navbar .links {
+  font-size 14px !important;
+};
+
+.nav-item {
+  margin-left: 1rem !important;
+};
+
+//Removed these and just defined them as custom routes in the config because if i wanted to style them id need to learn vue at 12:13 am
+.sidebar .nav-links {
+  display: none !important;
+};
+
+.sidebar .sidebar-link span {
+  display: none;
+}
+
+.custom-block.tip {
+  background-color: $codeBgColor !important;
+  border-color: #42b983;
+}
+
+.custom-block.warning {
+  background-color: $codeBgColor !important;
+  border-color: #6da6e8;
+  color: #c9d1d9;
+}
+
+.custom-block.warning .custom-block-title {
+  color: #c9d1d9;
+}
+
+.custom-block.tip, .custom-block.warning, .custom-block.danger {
+  padding: 0.1rem 1.5rem;
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  margin: 1rem 0;
+}
+
+
+
+@media screen and (max-width: $MQMobile) {
+  .sidebar {
+    top: 0 !important;
+    z-index: 999 !important;
+    padding-top: 0 !important;
+    left: -320px;
+    width: 280px !important;
+    box-shadow: 0 8px 24px #010409 !important;
+  }
+
+  .sidebar-open .sidebar {
+    left: 0;
+  }
+};
