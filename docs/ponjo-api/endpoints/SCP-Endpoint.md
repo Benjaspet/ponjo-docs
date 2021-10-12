@@ -4,12 +4,12 @@
 
 Easily retrieve data on any SCP item.
 
-| **Parameter** | **Type** | **Description** |
+| **Parameter** | **Type** | **Details** |
 | :---: | :---: | :---: | 
 | `item` | `int` | The SCP number to search. |
 | **Header** | **Type** | **Description** |
 | Authorization | `string` | Your API access key. |
-| Content-Type | `string` | `JSON` or `Plaintext` |
+| Content-Type | `string` | `application/json` |
 
 ### Sample Request
 
