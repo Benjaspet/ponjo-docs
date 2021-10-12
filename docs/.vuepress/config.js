@@ -11,8 +11,11 @@ module.exports = {
     themeConfig: {
         lastUpdated: "Last Updated",
         nav: [
-            {text: "API Docs", link: "/docs/api/"},
-            {text: "Discord Docs", link: "/docs/discord/"},
+            {text: "Ponjo API Docs", link: ""},
+            {text: "Pronoun API Docs", link: ""},
+            {text: "Matte.css Docs", link: ""},
+            {text: "Elixir Music", link: ""},
+            {text: "RoboEerie", link: ""},
             {
                 text: "Links",
                 items: [
