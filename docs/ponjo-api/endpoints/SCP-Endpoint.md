@@ -1,7 +1,5 @@
 ## SCP Item
 
-![](https://img.shields.io/badge/-GET%20REQUEST!-20ab43?style=flat)
-
 Easily retrieve data on any SCP item.
 
 | **Parameter** | **Type** | **Details** |
@@ -10,6 +8,9 @@ Easily retrieve data on any SCP item.
 | **Header** | **Type** | **Description** |
 | Authorization | `string` | Your API access key. |
 | Content-Type | `string` | `application/json` |
+
+#### Method
+> This endpoint uses a `GET` request.
 
 ### Sample Request
 

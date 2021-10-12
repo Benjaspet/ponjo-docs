@@ -1,7 +1,5 @@
 ## Hex Color Data
 
-![](https://img.shields.io/badge/-GET%20REQUEST!-20ab43?style=flat)
-
 Get data and assets of a hex color.
 
 | **Parameter** | **Type** | **Details** |
@@ -10,6 +8,9 @@ Get data and assets of a hex color.
 | **Header** | **Type** | **Description** |
 | Authorization | `string` | Your API access key. |
 | Content-Type | `string` | `application/json` or `img/png` |
+
+#### Method
+> This endpoint uses a `GET` request.
 
 ### Sample Request
 

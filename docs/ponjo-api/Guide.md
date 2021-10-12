@@ -15,7 +15,7 @@ The Ponjo API has numerous endpoints to assist you in creating a flexible, respo
 
 #### What is the base URL of the API?
 
-For version 1, the base URL is ```https://app.ponjo.club/v1```.
+For version 1, the base URL is [https://app.ponjo.club/v1](https://app.ponjo.club/v1)
 
 #### What endpoints are available to the public?
 
