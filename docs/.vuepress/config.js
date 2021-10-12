@@ -27,7 +27,8 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                    "/ponjo-api/Getting-Started.md"
+                    ["/ponjo-api/Guide.md", "Guide"],
+                    ["/ponjo-api/Endpoints.md", "Endpoints"]
                 ]
             },
             {
