@@ -40,15 +40,6 @@ module.exports = {
                     ["/ponjo-api/endpoints/Utility.md", "Utility"]
                 ]
             },
-            {
-                title: "Ponjo API 2",
-                collapsable: false,
-                sidebarDepth: 1,
-                children: [
-                    ["/ponjo-api/Guide.md", "Guide"],
-                    ["/ponjo-api/Endpoints.md", "Endpoints"]
-                ]
-            },
         ],
         logo: "https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Crescent-Logo.png",
     }
