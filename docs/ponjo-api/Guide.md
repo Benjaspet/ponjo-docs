@@ -11,25 +11,6 @@ Once you've obtained an API key, check out the endpoints page linked below. For 
 
 The Ponjo API has numerous endpoints to assist you in creating a flexible, responsive, and productive application. The API uses an easy-to-use JSON response format, allowing for simple integration.
 
-### Game Queries
-
-- `/v1/query/minecraft`
-- `/v1/query/bedrock`
-- `/v1/query/fivem`
-
-### Image Manipulation Endpoint
-
-- `/v1/img/jail`
-- `/v1/img/trigger`
-- `/v1/img/gay`
-- `/v1/img/wanted`
-
-### Utility Endpoint
-
-- `/v1/affirmations`
-- `/v1/color`
-- `/v1/scp`
-
 ## Frequently Asked Questions
 
 #### What is the base URL of the API?

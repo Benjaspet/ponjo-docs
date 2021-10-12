@@ -1,49 +1,20 @@
-## SCP Information 
+## All Endpoints
 
-![](https://img.shields.io/badge/-GET%20REQUEST!-20ab43?style=flat)
+### Game Queries
 
-Easily retrieve data on any SCP item.
+- `/v1/query/minecraft`
+- `/v1/query/bedrock`
+- `/v1/query/fivem`
 
-| **Parameter** | **Type** | **Description** |
-| :---: | :---: | :---: | 
-| `item` | `int` | The SCP number to search. |
-| **Header** | **Type** | **Description** |
-| Authorization | `string` | Your API access key. |
-| Content-Type | `string` | `JSON` or `Plaintext` |
+### Image Manipulation Endpoint
 
-### Sample Request
+- `/v1/img/jail`
+- `/v1/img/trigger`
+- `/v1/img/gay`
+- `/v1/img/wanted`
 
-```shell
-# METHOD: GET
-https://app.ponjo.club/v1/scp?item=1445
-```
+### Utility Endpoint
 
-### Sample Responses
-
-🟢 **Status: 200** ─ Success.
-```json
-{    
-  "status": 200,    
-  "data": {        
-    "url": "https://www.scpwiki.com/scp-061",        
-    "scp": "SCP-061",        
-    "class": "Safe",        
-    "procedures": []
-  },    
-  "timestamps": {        
-    "date": "10/3/2021, 5:48:28 PM",        
-    "unix": 1633297709
-  }
-}
-```
-🔴 **Status: 400** ─ Invalid syntax.
-```json
-{
-  "status": 400,
-  "message": "Invalid syntax.",
-  "timestamps": {
-    "date": "10/1/2021, 12:39:42 PM",
-    "unix": 1633091982
-  }
-}
-```
+- `/v1/affirmations`
+- `/v1/color`
+- `/v1/scp`
