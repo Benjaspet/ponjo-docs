@@ -33,7 +33,7 @@ if you're looking to contact a staff member, you can do so [here.](https://ponjo
 
 ### All Resources
 
-- [Ponjo API](/Ponjo-API)
+- [Ponjo API](/ponjo-api/Guide.md)
 - [Pronoun API]()
 - [Elixir Music]()
 - [Matte.css]()

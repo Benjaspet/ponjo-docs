@@ -114,6 +114,7 @@ tr:nth-child(2n) {
 }
 
 @media screen and (max-width: $MQMobile) {
+
   .sidebar {
     top: 0 !important;
     z-index: 999 !important;
@@ -121,9 +122,11 @@ tr:nth-child(2n) {
     left: -320px;
     width: 280px !important;
     box-shadow: 0 8px 24px #010409 !important;
+    transition: 0.5s;
   }
 
   .sidebar-open .sidebar {
     left: 0;
   }
+
 };
