@@ -1,3 +1,21 @@
+---
+meta:
+- name: keywords
+  content: super duper SEO
+- name: theme-color
+  content: "#6da6e8"
+- property: og:title
+  content: Ponjo | Documentation
+- property: og:site_name
+  content: docs.ponjo.club
+- property: og:description
+  content: Welcome to the official documentation for all services created by the Ponjo Team. Here, you can find all the information you'll need on how to integrate your projects with our services & libraries.
+- property: og:image:url
+  content: https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Ponjo.png
+- property: og:image:secure_url
+  content: https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Ponjo.png
+---
+
 ## Documentation
 
 Welcome to the official documentation for all services created by the Ponjo Team. Here, you can find all the information 
