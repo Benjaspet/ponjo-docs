@@ -24,7 +24,8 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     ["/ponjo-api/Guide.md", "Guide"],
-                    ["/ponjo-api/Endpoints.md", "Endpoints"]
+                    ["/ponjo-api/Endpoints.md", "Endpoints"],
+                    ["/ponjo-api/ErrorResponses.md", "Handling Errors"]
                 ]
             },
             {

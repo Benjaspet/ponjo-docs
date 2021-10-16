@@ -37,17 +37,7 @@ GET https://app.ponjo.club/v1/query/minecraft?host=lunar.gg&port=25565
   }
 }
 ```
-🔴 **Status: 400** ─ Invalid syntax.
-```json
-{
-  "status": 400,
-  "message": "Invalid syntax.",
-  "timestamps": {
-    "date": "10/1/2021, 12:39:42 PM",
-    "unix": 1633091982
-  }
-}
-```
+
 
 # Minecraft: Bedrock Edition
 
