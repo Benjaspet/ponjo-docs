@@ -26,8 +26,6 @@ hr {
   border-top: 1px solid $textColor;
 }
 
-// This is causing some formatting issues for mobile devices, remove?
-// Lets keep this, but just with a media query for mobile
 @media screen and (min-width: $MQMobile) {
   .navbar {
     padding-left: 1rem !important;
@@ -127,6 +125,7 @@ tr:nth-child(2n) {
 
   .sidebar-open .sidebar {
     left: 0;
+    bodyoverflow: hidden;
   }
 
 };

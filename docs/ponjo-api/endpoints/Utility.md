@@ -79,3 +79,44 @@ Retrieve a confidence-boosting affirmation.
   }
 }
 ```
+
+## Captcha Data
+
+Create a captcha with its resolution.
+
+| **Header** | **Type** | **Description** |
+| :---: | :---: | :---: | 
+| Authorization | `string` | Your API access key. |
+| Content-Type | `string` | `application/json` |
+
+#### Method
+> This endpoint uses a `GET` request.
+
+### Sample Responses
+
+🟢 **Status: 200** ─ Success.
+
+```json
+{
+  "status": 200,
+  "data": {
+    "value": "CMWMBT",
+    "imgData": "data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQg..."
+  },
+  "timestamps": {
+    "date": "10/16/2021, 10:25:50 AM",
+    "unix": 1634394350
+  }
+}
+```
+🔴 **Status: 400** ─ Invalid syntax.
+```json
+{
+  "status": 400,
+  "message": "Invalid syntax.",
+  "timestamps": {
+    "date": "10/1/2021, 12:39:42 PM",
+    "unix": 1633091982
+  }
+}
+```
