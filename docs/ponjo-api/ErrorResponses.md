@@ -41,6 +41,39 @@ Here you can find documentation of all error responses for all API endpoints.
 ```json
 {
   "status": 404,
+  "message": "The requested URL was not found on our servers.",
+  "timestamps": {
+    "date": "10/16/2021, 9:02:49 PM",
+    "unix": 1634418169
+  }
+}
+```
+
+### 🔴 429 ─ Too Many Requests
+
+- You've sent too many requests in a given timeframe.
+- You've been ratelimited.
+- Most ratelimits expire after 15 minutes.
+
+```json
+{
+  "status": 429,
+  "message": "Too many requests. Please try again later.",
+  "timestamps": {
+    "date": "10/1/2021, 12:39:42 PM",
+    "unix": 1633091982
+  }
+}
+```
+
+### 🔴 500 ─ Internal Server Error
+
+- An unexpected condition caused the server to fail to satisfy the request.
+- This error is returned when no other error code can be provided.
+
+```json
+{
+  "status": 500,
   "message": "Invalid API key provided.",
   "timestamps": {
     "date": "10/1/2021, 12:39:42 PM",
