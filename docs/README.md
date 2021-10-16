@@ -14,6 +14,8 @@ meta:
   content: https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Ponjo.png
 - property: og:image:secure_url
   content: https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Ponjo.png
+- name: color-scheme
+  content: light dark
 ---
 
 ## Documentation

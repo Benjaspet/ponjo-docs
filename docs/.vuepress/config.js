@@ -4,6 +4,7 @@ module.exports = {
     port: 8000,
     head: [
         ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Crescent-Logo.png"}],
+        ['script', {src: 'https://code.jquery.com/jquery-3.4.1.min.js'}]
     ],
     markdown: {
         lineNumbers: false
@@ -65,7 +66,7 @@ module.exports = {
                     ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
                     ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
                     ["/ponjo-api/endpoints/Utility.md", "Utility"],
-                    ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"]
+                    ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
                 ]
             },
         ],

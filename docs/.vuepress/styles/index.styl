@@ -107,6 +107,28 @@ a.nav-link:hover {
   margin: 1rem 0;
 }
 
+html {
+  scrollbar-face-color: #646464;
+  scrollbar-base-color: #646464;
+  scrollbar-3dlight-color: #646464;
+  scrollbar-highlight-color: #646464;
+  scrollbar-track-color: #000;
+  scrollbar-arrow-color: #000;
+  scrollbar-shadow-color: #646464;
+  scrollbar-dark-shadow-color: #646464;
+}
+
+::-webkit-scrollbar {
+  background-color: $borderColor;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 12px;
+}
+
 tr:nth-child(2n) {
   background-color: $borderColor !important;
 }
@@ -118,14 +140,29 @@ tr:nth-child(2n) {
     z-index: 999 !important;
     padding-top: 0 !important;
     left: -320px;
-    width: 280px !important;
+    width: 70% !important;
     box-shadow: 0 8px 24px #010409 !important;
     transition: 0.5s;
   }
 
   .sidebar-open .sidebar {
     left: 0;
-    bodyoverflow: hidden;
+    max-width: 70%;
+  }
+
+  .body {
+    position: static;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: $borderColor;
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 12px;
   }
 
 };
