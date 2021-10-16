@@ -81,3 +81,18 @@ Here you can find documentation of all error responses for all API endpoints.
   }
 }
 ```
+### 🔴 504 ─ Gateway Timeout
+
+- The API was not able to send a response in time.
+- This is usually prevalent on the Game Query endpoint when an invalid host is queried, or it is not online.
+
+```json
+{
+  "status": 504,
+  "message": "Query timed out.",
+  "timestamps": {
+    "date": "10/1/2021, 12:26:17 PM",
+    "unix": 1633091178
+  }
+}
+```

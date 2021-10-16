@@ -38,7 +38,6 @@ GET https://app.ponjo.club/v1/query/minecraft?host=lunar.gg&port=25565
 }
 ```
 
-
 # Minecraft: Bedrock Edition
 
 Query a Minecraft: Bedrock Edition server.
@@ -94,31 +93,6 @@ GET https://app.ponjo.club/v1/query/bedrock?host=vasar.land&port=19800
   "timestamps": {
     "date": "10/2/2021, 5:03:28 PM",
     "unix": 1633194208
-  }
-}
-```
-🟠 **Status: 400** ─ Invalid syntax.
-
-```json
-{
-  "status": 400,
-  "message": "Invalid syntax.",
-  "timestamps": {
-    "date": "10/1/2021, 12:39:42 PM",
-    "unix": 1633091982
-  }
-}
-```
-
-🔴 ─ Invalid host/offline.
-
-```json
-{
-  "status": 504,
-  "message": "Query failed. The server might not be online.",
-  "timestamps": {
-    "date": "10/1/2021, 12:26:17 PM",
-    "unix": 1633091178
   }
 }
 ```
