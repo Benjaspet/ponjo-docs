@@ -28,17 +28,6 @@ https://app.ponjo.club/v1/color?hex=32a852
   "status": "not completed"
 }
 ```
-🔴 **Status: 400** ─ Invalid syntax.
-```json
-{
-  "status": 400,
-  "message": "Invalid syntax.",
-  "timestamps": {
-    "date": "10/1/2021, 12:39:42 PM",
-    "unix": 1633091982
-  }
-}
-```
 
 ## Affirmations
 
@@ -65,17 +54,6 @@ Retrieve a confidence-boosting affirmation.
   "timestamps": {
     "date": "10/2/2021, 9:56:31 PM",
     "unix": 1633226192
-  }
-}
-```
-🔴 **Status: 400** ─ Invalid syntax.
-```json
-{
-  "status": 400,
-  "message": "Invalid syntax.",
-  "timestamps": {
-    "date": "10/1/2021, 12:39:42 PM",
-    "unix": 1633091982
   }
 }
 ```
@@ -106,17 +84,6 @@ Create a captcha with its resolution.
   "timestamps": {
     "date": "10/16/2021, 10:25:50 AM",
     "unix": 1634394350
-  }
-}
-```
-🔴 **Status: 400** ─ Invalid syntax.
-```json
-{
-  "status": 400,
-  "message": "Invalid syntax.",
-  "timestamps": {
-    "date": "10/1/2021, 12:39:42 PM",
-    "unix": 1633091982
   }
 }
 ```
