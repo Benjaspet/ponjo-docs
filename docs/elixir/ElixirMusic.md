@@ -26,5 +26,18 @@ Below you can find a list of all commands, their usages, and examples.
 | `play` | `/play <song:playlist>` | Add a song or playlist of songs to the queue. |
 | `volume` | `/volume <amplifier>` | Amplify or lower the song's volume. |
 | `filter` | `/filter {type}` | Apply or remove audio filters from the currently playing song. |
+| `rewind` | `/rewind {duration}` | Rewind the currently playing song by the specified duration. |
+| `seek` | `/seek {duration}` | Seek through the song. |
+| `nowplaying` | `/nowplaying` | View information about the song currently playing. |
+| `pause` | `/pause` | Pause the song that is currently playing. |
+| `queue` | `/queue` | View all songs in the queue. |
+| `resume` | `/resume` | Resume the currently playing song. |
+| `loop` | `/loop {mode}` | Loop the queue or current song. |
+| `shuffle` | `/shuffle` | Shuffle the song queue. |
+| `stop` | `/stop` | Stop Elixir from playing and have it leave the voice channel. |
+| `help` | `/help {category}` | Show a list of commands, FAQs, and other resources. |
+| `info` | `/info` | View Elixir's information & statistics. |
+
+## Examples
 
 ![Elixir](https://raw.githubusercontent.com/Eerie6560/Archives/main/images/elixir/docs/PlayCommandQuery.png)

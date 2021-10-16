@@ -43,7 +43,8 @@ module.exports = {
                 collapsable: false,
                 sidebarDepth: 1,
                 children: [
-                    ["/elixir/ElixirMusic.md", "Documentation"]
+                    ["/elixir/ElixirMusic.md", "Documentation"],
+                    ["/elixir/ElixirPrivacy.md", "Privacy Policy"]
                 ]
             }
         ],
