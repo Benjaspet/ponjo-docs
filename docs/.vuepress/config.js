@@ -12,18 +12,10 @@ module.exports = {
     themeConfig: {
         lastUpdated: "Last Updated",
         nav: [
-            {text: "Ponjo API Docs", link: ""},
-            {text: "Pronoun API Docs", link: ""},
-            {text: "Matte.css Docs", link: ""},
-            {text: "Elixir Music", link: ""},
-            {text: "RoboEerie", link: ""},
-            {
-                text: "Links",
-                items: [
-                    {text: "Discord", link: "https://ponjo.club/discord"},
-                    {text: "Portfolio", link: "https://benpetrillo.dev"}
-                ]
-            }
+            {text: "Pronoun API", link: "https://pronoun.space"},
+            {text: "Elixir Music", link: "https://ponjo.club/invites/elixir"},
+            {text: "Ben's Portfolio", link: "https://benpetrillo.dev"},
+            {text: "Discord", link: "https://ponjo.club/discord"},
         ],
         sidebar: [
             {
@@ -43,32 +35,16 @@ module.exports = {
                     ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
                     ["/ponjo-api/endpoints/Utility.md", "Utility"],
                     ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
-                    ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
-                    ["/ponjo-api/endpoints/Utility.md", "Utility"],
-                    ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
-                    ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
-                    ["/ponjo-api/endpoints/Utility.md", "Utility"],
-                    ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
-                    ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
-                    ["/ponjo-api/endpoints/Utility.md", "Utility"],
-                    ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
-                    ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
-                    ["/ponjo-api/endpoints/Utility.md", "Utility"],
-                    ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
-                    ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
-                    ["/ponjo-api/endpoints/Utility.md", "Utility"],
-                    ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
-                    ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
-                    ["/ponjo-api/endpoints/Utility.md", "Utility"],
-                    ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
-                    ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
-                    ["/ponjo-api/endpoints/Utility.md", "Utility"],
-                    ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
-                    ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
-                    ["/ponjo-api/endpoints/Utility.md", "Utility"],
-                    ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
                 ]
             },
+            {
+                title: "Elixir Music",
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    ["/elixir/ElixirMusic.md", "Documentation"]
+                ]
+            }
         ],
         logo: "https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Crescent-Logo.png",
     }
