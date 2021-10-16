@@ -7,7 +7,7 @@
 - With Elixir, all members of your server will be able to listen to their favorite tunes. If more members are listening to music in voice channels, they are more likely to remain in and become more involved in your community. Elixir makes it easy to enjoy listening to your favorite music with a group of friends or by yourself. What's not to love?
 - We're always here to help, with quick & reliable support. Find a bug or want to make a suggestion for a new feature? Don't hesitate to contact us by joining our [Discord server.](https://ponjo.club/discord)
 
-## Recent Changes
+### Migration to Slash Commands
 
 ::: tip Removal of Prefix Commands
 Elixir is no longer using traditional prefix commands (`e!help`). All of Elixir's commands can be accessed through Discord's built-in slash commands. Simply type `/` in any text channel to view all slash commands for your server, and then select Elixir's logo to view all available commands and their descriptions & arguments.
@@ -41,3 +41,28 @@ Below you can find a list of all commands, their usages, and examples.
 ## Examples
 
 ![Elixir](https://raw.githubusercontent.com/Eerie6560/Archives/main/images/elixir/docs/PlayCommandQuery.png)
+
+## Changelog
+
+::: warning Version 3.0 ─ 8/2/2021
+
+- Full support for Spotify URLs & playlist URLs.
+- Removed traditional prefix commands.
+- Added full support for slash commands.
+- Added a variety of new audio filters.
+- Due to recent events, YouTube support has been removed.
+
+:::
+
+::: warning Version 2.0 ─ 9/12/2021
+
+- Fixed some minor audio bugs.
+- Fixed an issue with custom prefixes.
+
+:::
+
+::: warning Version 1.0 ─ 7/12/2021
+
+- Initial release of Elixir.
+- Support for YouTube, Spotify, SoundCloud, and other platforms.
+- Added song loops & YouTube livestream support.
