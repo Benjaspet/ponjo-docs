@@ -44,6 +44,7 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     ["/elixir/ElixirMusic.md", "Documentation"],
+                    ["/elixir/Tutorial.md", "Guide"],
                     ["/elixir/ElixirPrivacy.md", "Privacy Policy"]
                 ]
             }
