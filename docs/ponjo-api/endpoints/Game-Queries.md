@@ -1,4 +1,4 @@
-# Minecraft: Java Edition
+## Minecraft: Java Edition
 
 Query a Minecraft: Java Edition server.
 
@@ -16,29 +16,46 @@ Query a Minecraft: Java Edition server.
 ### Sample Request
 
 ```https request
-GET https://app.ponjo.club/v1/query/minecraft?host=lunar.gg&port=25565
+GET https://app.ponjo.club/v1/query/mcjava?host=mc.hypixel.net&port=25565
 ```
 
 ### Sample Responses
 
 🟢 **Status: 200** ─ Success.
 ```json
-{    
-  "status": 200,    
-  "data": {        
-    "url": "https://www.scpwiki.com/scp-061",        
-    "scp": "SCP-061",        
-    "class": "Safe",        
-    "procedures": []
-  },    
-  "timestamps": {        
-    "date": "10/3/2021, 5:48:28 PM",        
-    "unix": 1633297709
+{
+  "status": 200,
+  "host": "mc.hypixel.net",
+  "port": 25565,
+  "srvRecord": null,
+  "version": "Requires MC 1.8 / 1.17",
+  "protocolVersion": 47,
+  "players": {
+    "online": 82079,
+    "maxOnline": 200000,
+    "list": []
+  },
+  "latency": 115,
+  "motd": {
+    "version": {
+      "name": "Requires MC 1.8 / 1.17",
+      "protocol": 47
+    },
+    "players": {
+      "max": 200000,
+      "online": 82079,
+      "sample": []
+    },
+    "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAA..."
+  },
+  "timestamps": {
+    "date": "10/17/2021, 4:49:54 PM",
+    "unix": 1634503794
   }
 }
 ```
 
-# Minecraft: Bedrock Edition
+## Minecraft: Bedrock Edition
 
 Query a Minecraft: Bedrock Edition server.
 
@@ -56,7 +73,7 @@ Query a Minecraft: Bedrock Edition server.
 ### Sample Request
 
 ```https request
-GET https://app.ponjo.club/v1/query/bedrock?host=vasar.land&port=19800
+GET https://app.ponjo.club/v1/query/mcbe?host=vasar.land&port=19132
 ```
 
 🟢 **Status: 200** ─ Success.
