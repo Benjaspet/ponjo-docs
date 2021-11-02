@@ -2,6 +2,11 @@ module.exports = {
     title: "Ponjo Docs",
     description: "The official documentation for all Ponjo Team services.",
     port: 8000,
+    plugins: [
+        ['@vuepress/search', {
+            searchMaxSuggestions: 10
+        }]
+    ],
     head: [
         ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Crescent-Logo.png"}],
         ['script', {src: 'https://code.jquery.com/jquery-3.4.1.min.js'}]
@@ -11,6 +16,7 @@ module.exports = {
     },
     themeConfig: {
         lastUpdated: "Last Updated",
+
         nav: [
             {text: "Pronoun API", link: "https://pronoun.space"},
             {text: "Elixir Music", link: "https://ponjo.club/invites/elixir"},
@@ -36,6 +42,7 @@ module.exports = {
                     ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
                     ["/ponjo-api/endpoints/Utility.md", "Utility"],
                     ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
+                    ["/ponjo-api/endpoints/LGBTQ-Endpoint", "LGBTQ"]
                 ]
             },
             {
@@ -46,6 +53,14 @@ module.exports = {
                     ["/elixir/ElixirMusic.md", "Documentation"],
                     ["/elixir/Tutorial.md", "Guide"],
                     ["/elixir/ElixirPrivacy.md", "Privacy Policy"]
+                ]
+            },
+            {
+                title: "Ponjo Commands",
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    ["/ponjo-commands/Guide.md", "Guide"]
                 ]
             }
         ],
