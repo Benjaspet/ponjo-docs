@@ -55,14 +55,6 @@ module.exports = {
                     ["/elixir/ElixirPrivacy.md", "Privacy Policy"]
                 ]
             },
-            {
-                title: "Ponjo Commands",
-                collapsable: false,
-                sidebarDepth: 1,
-                children: [
-                    ["/ponjo-commands/Guide.md", "Guide"]
-                ]
-            }
         ],
         logo: "https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Crescent-Logo.png",
     }
