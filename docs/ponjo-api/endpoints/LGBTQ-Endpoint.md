@@ -1,5 +1,7 @@
 ## Pride Avatar
 
+<img src="../../../images/lgbtq/ProgressPride.png" alt="Pride" width="91" height="54">
+
 Add pride flairs to your profile picture.
 
 | **Parameter** | **Type** | **Details** |
@@ -7,6 +9,7 @@ Add pride flairs to your profile picture.
 | `flair` | `string` | The flair to add. |
 | `avatar` | `string` | The encoded URL of the avatar. |
 | `?format` | `string` | The format of the response. |
+| **Header** | **Type** | **Description** |
 | Authorization | `string` | Your API access key. |
 
 > Method: `POST` Accepted formats: `png`, `jpg`, `base64`
@@ -14,7 +17,7 @@ Add pride flairs to your profile picture.
 ### Sample Request
 
 ```http request
-https://app.ponjo.club/v1/pride/avatar?flair=bisexual&avatar=https%3A%2F%2Fraw.githubusercontent.com%2FEerie6560%2FArchives%2Fmain%2Fimages%2Ficons%2FCrescent-Logo.png&format=png
+POST https://app.ponjo.club/v1/pride/avatar?flair=bisexual&avatar=https%3A%2F%2Fraw.githubusercontent.com%2FEerie6560%2FArchives%2Fmain%2Fimages%2Ficons%2FCrescent-Logo.png&format=png
 ```
 
 ### Successful Response

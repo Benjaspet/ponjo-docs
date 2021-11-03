@@ -16,7 +16,6 @@ module.exports = {
     },
     themeConfig: {
         lastUpdated: "Last Updated",
-
         nav: [
             {text: "Pronoun API", link: "https://pronoun.space"},
             {text: "Elixir Music", link: "https://ponjo.club/invites/elixir"},
@@ -24,6 +23,14 @@ module.exports = {
             {text: "Discord", link: "https://ponjo.club/discord"},
         ],
         sidebar: [
+            {
+                title: "Welcome",
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    ["", "Introduction"],
+                ]
+            },
             {
                 title: "Ponjo API",
                 collapsable: false,
