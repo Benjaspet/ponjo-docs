@@ -36,6 +36,7 @@ module.exports = {
                     ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
                     ["/ponjo-api/endpoints/Utility.md", "Utility"],
                     ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
+                    ["/ponjo-api/endpoints/Color.md", "Color Tools"],
                 ]
             },
             {

@@ -2,12 +2,12 @@
 
 Easily retrieve data on any SCP item.
 
-| **Parameter** | **Type** | **Details** |
-| :---: | :---: | :---: | 
-| `item` | `int` | The SCP number to search. |
-| **Header** | **Type** | **Description** |
-| Authorization | `string` | Your API access key. |
-| Content-Type | `string` | `application/json` |
+| **Parameter** | **Type** | **Details** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `item` | `int` | The SCP number to search. | `true` |
+| **Header** | **Type** | **Description** | **Required** |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
 
 #### Method
 > This endpoint uses a `GET` request.
@@ -15,29 +15,140 @@ Easily retrieve data on any SCP item.
 ### Sample Request
 
 ```shell
-# METHOD: GET
-https://app.ponjo.club/v1/scp?item=952
+GET https://app.ponjo.club/v1/scp?item=005
 ```
 
-### Sample Responses
+### Sample Response
 
 🟢 **Status: 200** ─ Success.
 ```json
 {
-  "status": 400,
+  "status": 200,
   "data": {
     "status": 200,
-    "item": "SCP-952",
-    "class": "Keter",
-    "description": "Description: SCP-952 is an anomalous subgenre of math rock known as \"NP Rock\", defined primarily by a specific arrangement of instrumental configurations, subject matter, and esoteric musical technique. Evidence suggests that the culmination of these components is the cause of SCP-952's anomalous properties.",
-    "procedures": "Special Containment Procedures: Musical projects under the effects of SCP-952 are to be terminated by any means possible, and any physical media storing recordings of SCP-952-influenced music are to be copied onto a Standardized Type-C antimemetic storage device, then destroyed. Venues that have hosted SCP-952-infected musicians are to be closed until such a point when it can be confirmed that none of the staff are affected.",
-    "imageSrc": "https://scp-wiki.wdfiles.com/local--files/scp-952/HighwayAsh.png"
+    "item": "SCP-005",
+    "class": "Safe",
+    "description": "In appearance, SCP-005 resembles an ornate key, displaying the characteristics of a typical mass produced key used in the 1920s. The key was discovered when a civilian used it to infiltrate a high security facility. SCP-005 seems to have the unique ability to open any and all forms of lock (See Appendix A), be they mechanical or digital, with relative ease. The origin of this ability has yet to be determined.",
+    "procedures": "SCP-005 poses no immediate risk in any direct sense. Even so, its unique functions require special measures be taken to restrict access and manipulation of the object. Approval of at least one (1) Level 4 personnel is required for the removal of the object from its containment area.",
+    "imageSrc": "https://scp-wiki.wdfiles.com/local--files/scp-005/SCP-005.jpg"
   },
   "timestamps": {
-    "date": "10/12/2021, 6:21:39 PM",
-    "unix": 1634077300
+    "date": "11/24/2021, 8:37:20 PM",
+    "unix": 1637786240
   }
 }
 ```
 
-## SCP Personnel
+## SCP Task Forces
+
+Get all SCP Foundation task forces.
+
+| **Header** | **Type** | **Description** | **Required** |
+| :---: | :---: | :---: | :---: |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
+
+#### Method
+> This endpoint uses a `GET` request.
+
+### Sample Request
+
+```shell
+GET https://app.ponjo.club/v1/scp/taskforces
+```
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+```json
+{
+  "status": 200,
+  "data": [
+    {
+      "MTF Alpha-1": {
+        "name": "MTF Alpha-1 (\"Red Right Hand\")",
+        "description": "Task Force Mission: Mobile Task Force Alpha-1 is a task force that reports directly to the O5 Council and is used in situations that require the strictest operational security. The task force consists of the Foundation's best and most loyal operatives. Further information regarding MTF Alpha-1 is classified Level 5.",
+        "logo": "https://scp-wiki.wdfiles.com/local--resized-images/task-forces/Alpha1.png/small.jpg"
+      }
+    },
+    {
+      "MTF Alpha-4": {
+        "name": "MTF Alpha-4 (\"Pony Express\")",
+        "description": "Task Force Mission: Mobile Task Force Alpha-4 consists primarily of personnel trained to act as undercover employees and specialize in tracking, intercepting, and securing anomalous objects sent through postal and package delivery services worldwide.",
+        "logo": "https://scp-wiki.wdfiles.com/local--resized-images/task-forces/Alpha4.png/small.jpg"
+      }
+    },
+    {
+      "MTF Alpha-9": {
+        "name": "MTF Alpha-9 (\"Last Hope\")",
+        "description": "Task Force Mission: The reborn Omega-7. A Mobile Task Force explicitly intended to train and utilize humanoid SCP objects in the field.",
+        "logo": "https://scp-wiki.wdfiles.com/local--resized-images/task-forces/alpha9alt.png/small.jpg"
+      }
+    },
+    {
+      "MTF Beta-4": {
+        "name": "MTF Beta-4 (\"Castaways\")",
+        "description": "Task Force Mission: MTF Beta-4 is a task force created with the sole purpose of assisting and monitoring GoI-466 (Wilson's Wildlife Solutions) in their interactions with local fauna-based anomalies.",
+        "logo": "https://scp-wiki.wdfiles.com/local--resized-images/task-forces/beta4.png/small.jpg"
+      }
+    }
+  ],
+  "timestamps": {
+    "date": "11/24/2021, 8:42:36 PM",
+    "unix": 1637786557
+  }
+}
+```
+
+## SCP Branches
+
+Get all SCP Foundation branches.
+
+| **Header** | **Type** | **Description** | **Required** |
+| :---: | :---: | :---: | :---: |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
+
+#### Method
+> This endpoint uses a `GET` request.
+
+### Sample Request
+
+```shell
+GET https://app.ponjo.club/v1/scp/branches
+```
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+```json
+{
+  "status": 200,
+  "branches": {
+    "base": {
+      "logo": "https://scp-int.wdfiles.com/local--files/main/scp-logo-en-400.png",
+      "about": null
+    },
+    "pride": {
+      "logo": "https://i.kym-cdn.com/photos/images/facebook/001/386/104/41d.png",
+      "about": null
+    },
+    "international": {
+      "logo": "https://scp-wiki.wdfiles.com/local--files/scp-international/scp-logo-int.png",
+      "about": "The International Translation Archive contains translations of SCP articles, tales, canons and other articles from all the different branches."
+    },
+    "russian": {
+      "logo": "https://o5command-int.wdfiles.com/local--files/tech-team:graphic-templates/scp-logo-ru-400.png",
+      "about": "Фонд SCP существует и действует подпольно и тайно, сдерживая аномалии, чтобы гарантировать нормальное состояние."
+    },
+    "spanish": {
+      "logo": "https://o5command-int.wdfiles.com/local--files/tech-team:graphic-templates/scp-logo-es-400.png",
+      "about": "La Fundación SCP existe y opera de manera clandestina y secreta conteniendo anomalías para asegurar la normalidad."
+    }
+  },
+  "timestamps": {
+    "date": "11/24/2021, 8:40:31 PM",
+    "unix": 1637786432
+  }
+}
+```
