@@ -1,4 +1,4 @@
-## Classes
+## AdvancedCommandHandler
 
 ### Constructor
 
@@ -13,7 +13,7 @@ new AdvancedCommandHandler(client, options);
 | `client` | `Client` | The Discord client. | `true` |
 | `options` | `AdvancedCommandHandlerOptions` | The options. | `true` |
 
-## Methods
+### Methods
 
 `getCommand()`
 - Get a command by name.
@@ -48,3 +48,60 @@ new AdvancedCommandHandler(client, options);
 | **Parameter** | **Type** | **Description** | **Required** |
 | :---: | :---: | :---: | :---: |
 | `guilds?` | `string` | The guild(s) to delete the commands from. | `false` |
+
+`getAllCommandData()`
+- Fetch all command data.
+- Returns: `AdvancedCommandData[]`
+
+## CommandBuilder
+
+### Constructor
+
+```ts
+new CommandBuilder();
+```
+
+- Create a new instance of the command builder.
+
+### Methods
+
+`setName()`
+- Set the name of this command instance.
+- Returns: `CommandBuilder`
+
+| **Parameter** | **Type** | **Description** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `name` | `string` | The name of this command. | `true` |
+
+`setDescription()`
+- Set the description of this command instance.
+- Returns: `CommandBuilder`
+
+| **Parameter** | **Type** | **Description** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `description` | `string` | The description of this command. | `true` |
+
+`addOption()`
+- Add an option to this command instance.
+- Returns: `CommandBuilder`
+
+| **Parameter** | **Type** | **Description** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `option` | `AdvancedCommandOptionData` | The option to add. | `true` |
+
+`addOptions()`
+- Add a list of options to this command instance.
+- Returns: `CommandBuilder`
+
+| **Parameter** | **Type** | **Description** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `options` | `AdvancedCommandOptionData[]` | The list of options to add. | `true` |
+
+`build()`
+- Build the command instance.
+- Throws: `InvalidCommandDataException`
+- Returns: [`AdvancedCommandData`](../../ach/Types.md)
+
+| **Parameter** | **Type** | **Description** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `option` | `AdvancedCommandOptionData` | The option to add. | `true` |

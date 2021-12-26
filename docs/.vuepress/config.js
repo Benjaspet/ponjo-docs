@@ -55,7 +55,8 @@ module.exports = {
                 children: [
                     ["/ach/Setup.md", "Setup"],
                     ["/ach/Examples.md", "Examples"],
-                    ["/ach/ClassesAndMethods.md", "Classes & Methods"]
+                    ["/ach/ClassesAndMethods.md", "Classes & Methods"],
+                    ["/ach/Types.md", "Types"]
                 ]
             },
         ],
