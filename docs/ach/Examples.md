@@ -31,6 +31,10 @@ client.login("TOKEN-HERE").then(response => console.log("Logged in!"));
 export default {client, handler};
 ```
 
+- Once you've created the command handler instance, make sure you've made a way to access it from other files.
+- Then, create a command class like the one below, passing in a `super()` call to the AdvancedCommand class.
+- In the `super()` call, pass in the name of the command and the command data.
+
 `TestCommand.ts`
 
 ```ts
