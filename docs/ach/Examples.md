@@ -1,11 +1,19 @@
 ## Creating The Handler
 
+- In order to create the command handler, you'll need to pass in a valid Discord.js client.
+- Once you've created your client, you must create a new command handler.
+  - Next, make sure to pass in the client you created.
+  - Pass in the array of `AdvancedCommand`s you want to use.
+- Log into your client and then start creating your command files using the example format below.
+
 `BotClient.ts`
 
 ```ts
 import {Intents} from "discord.js";
 import {AdvancedCommandHandler} from "./AdvancedCommandHandler";
 import TestCommand from "./TestCommand";
+
+// Creating a new client with options.
 
 const client: Client = new Client({
     intents: [Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS],
