@@ -48,4 +48,3 @@ new AdvancedCommandHandler(client, options);
 | **Parameter** | **Type** | **Description** | **Required** |
 | :---: | :---: | :---: | :---: |
 | `guilds?` | `string` | The guild(s) to delete the commands from. | `false` |
-
