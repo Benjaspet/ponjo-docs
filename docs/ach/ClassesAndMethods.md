@@ -40,3 +40,12 @@ new AdvancedCommandHandler(client, options);
 | **Parameter** | **Type** | **Description** | **Required** |
 | :---: | :---: | :---: | :---: |
 | `commands` | `AdvancedCommand[]` | The `AdvancedCommand` instances to register. | `true` |
+
+`deleteAll()`
+- Delete all application commands.
+- Returns: `Promise<void>`
+
+| **Parameter** | **Type** | **Description** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `guilds?` | `string` | The guild(s) to delete the commands from. | `false` |
+
