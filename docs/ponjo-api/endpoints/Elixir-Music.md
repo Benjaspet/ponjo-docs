@@ -44,7 +44,7 @@
 ## /v1/elixir/pause
 
 - Pause the music player in a guild.
-- Request type: `POST`
+- Request type: `PUT`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -70,7 +70,7 @@
 ## /v1/elixir/resume
 
 - Resume the music player in a guild.
-- Request type: `POST`
+- Request type: `PUT`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -96,7 +96,7 @@
 ## /v1/elixir/nowplaying
 
 - Get information about the track currently playing in a guild.
-- Request type: `GET`
+- Request type: `PUT`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -130,7 +130,7 @@
 ## /v1/elixir/skip
 
 - Skip to the next track in a guild.
-- Request type: `POST`
+- Request type: `PUT`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -156,7 +156,7 @@
 ## /v1/elixir/play
 
 - Load and play a track in a voice channel.
-- Request type: `POST`
+- Request type: `PUT`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
