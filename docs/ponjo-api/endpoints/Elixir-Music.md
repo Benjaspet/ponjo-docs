@@ -1,6 +1,7 @@
-## Guild Queue
+## /v1/elixir/queue
 
-Get the music queue for a guild.
+- Get the music queue for a guild. 
+- Request type: `GET`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -8,15 +9,6 @@ Get the music queue for a guild.
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |
-
-#### Method
-> This endpoint uses a `GET` request.
-
-### Sample Request
-
-```
-GET https://app.ponjo.club/v1/elixir/queue?guild=887516061266755585
-```
 
 ### Sample Response
 
@@ -49,9 +41,10 @@ GET https://app.ponjo.club/v1/elixir/queue?guild=887516061266755585
 }
 ```
 
-## Pause Player
+## /v1/elixir/pause
 
-Pause the music player in a guild.
+- Pause the music player in a guild.
+- Request type: `POST`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -59,15 +52,6 @@ Pause the music player in a guild.
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |
-
-#### Method
-> This endpoint uses a `GET` request.
-
-### Sample Request
-
-```
-GET https://app.ponjo.club/v1/elixir/pause?guild=887516061266755585
-```
 
 ### Sample Response
 
@@ -83,9 +67,10 @@ GET https://app.ponjo.club/v1/elixir/pause?guild=887516061266755585
 }
 ```
 
-## Resume Player
+## /v1/elixir/resume
 
-Resume the music player in a guild.
+- Resume the music player in a guild.
+- Request type: `POST`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -93,15 +78,6 @@ Resume the music player in a guild.
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |
-
-#### Method
-> This endpoint uses a `GET` request.
-
-### Sample Request
-
-```
-GET https://app.ponjo.club/v1/elixir/resume?guild=887516061266755585
-```
 
 ### Sample Response
 
@@ -117,9 +93,10 @@ GET https://app.ponjo.club/v1/elixir/resume?guild=887516061266755585
 }
 ```
 
-## Get Now Playing Track
+## /v1/elixir/nowplaying
 
-Get information about the track currently playing in a guild.
+- Get information about the track currently playing in a guild.
+- Request type: `GET`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -127,15 +104,6 @@ Get information about the track currently playing in a guild.
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |
-
-#### Method
-> This endpoint uses a `GET` request.
-
-### Sample Request
-
-```
-GET https://app.ponjo.club/v1/elixir/nowplaying?guild=887516061266755585
-```
 
 ### Sample Response
 
@@ -159,9 +127,36 @@ GET https://app.ponjo.club/v1/elixir/nowplaying?guild=887516061266755585
 }
 ```
 
-## Play A Track
+## /v1/elixir/skip
 
-Load and play a track in a voice channel.
+- Skip to the next track in a guild.
+- Request type: `POST`
+
+| **Parameter** | **Type** | **Details** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `guild` | `snowflake` | The guild ID. | `true` |
+| **Header** | **Type** | **Description** | **Required** |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+```json
+{
+  "status": 200,
+  "message": "Successfully skipped to the next track.",
+  "timestamps": {
+    "date": "1/31/2022, 3:41:56 PM",
+    "unix": 1643643717
+  }
+}
+```
+
+## /v1/elixir/play
+
+- Load and play a track in a voice channel.
+- Request type: `POST`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -170,15 +165,6 @@ Load and play a track in a voice channel.
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |
-
-#### Method
-> This endpoint uses a `GET` request.
-
-### Sample Request
-
-```
-GET https://app.ponjo.club/v1/elixir/play?guild=887516061266755585&query=aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1qbVQxcHlCRGloOA
-```
 
 ### Sample Response
 
