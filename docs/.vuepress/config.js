@@ -33,6 +33,7 @@ module.exports = {
                 collapsable: false,
                 sidebarDepth: 1,
                 children: [
+                    ["/ponjo-api/endpoints/Data.md", "Data Endpoint"],
                     ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
                     ["/ponjo-api/endpoints/Utility.md", "Utility"],
                     ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
