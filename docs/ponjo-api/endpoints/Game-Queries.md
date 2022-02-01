@@ -1,25 +1,17 @@
-## Minecraft: Java Edition
+## /v1/query/mcjava
 
-Query a Minecraft: Java Edition server.
+- Query a Minecraft: Java Edition server.
+- Request method: `GET`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
 | `host` | `string` | The IP address of the server to query. | `true` |
-| `port` | `bigInt` | The port of the server. | `false` |
+| `port` | `int` | The port of the server. | `false` |
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Content-Type | `string` | `application/json` | `false` |
 
-#### Method
-> This endpoint uses a `GET` request.
-
-### Sample Request
-
-```https request
-GET https://app.ponjo.club/v1/query/mcjava?host=mc.hypixel.net&port=25565
-```
-
-### Sample Responses
+### Sample Response
 
 🟢 **Status: 200** ─ Success.
 ```json
@@ -55,26 +47,20 @@ GET https://app.ponjo.club/v1/query/mcjava?host=mc.hypixel.net&port=25565
 }
 ```
 
-## Minecraft: Bedrock Edition
+## /v1/query/mcbe
 
-Query a Minecraft: Bedrock Edition server.
+- Query a Minecraft: Bedrock Edition server.
+- Request method: `GET`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
 | `host` | `string` | The IP address of the server to query. | `true` |
-| `port` | `bigInt` | The port of the server. | `false` |
+| `port` | `int` | The port of the server. | `false` |
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Content-Type | `string` | `application/json` | `false` |
 
-#### Method
-> This endpoint uses a `GET` request.
-
-### Sample Request
-
-```https request
-GET https://app.ponjo.club/v1/query/mcbe?host=vasar.land&port=19132
-```
+### Sample Response
 
 🟢 **Status: 200** ─ Success.
 ```json
@@ -110,6 +96,162 @@ GET https://app.ponjo.club/v1/query/mcbe?host=vasar.land&port=19132
   "timestamps": {
     "date": "10/2/2021, 5:03:28 PM",
     "unix": 1633194208
+  }
+}
+```
+
+## /v1/query/fivem
+
+- Query a FiveM server.
+- Request method: `GET`
+
+| **Parameter** | **Type** | **Details** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `host` | `string` | The IP address of the server to query. | `true` |
+| `port` | `int` | The port of the server. | `false` |
+| **Header** | **Type** | **Description** | **Required** |
+| Authorization | `string` | Your API access key. | `true` |
+| Content-Type | `string` | `application/json` | `false` |
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+```json
+{
+  "status": 200,
+  "data": {
+    "name": "^0WhatPixel Roleplay ^5|| ^0New Public Server ^5|| ...",
+    "map": "fivem-map-hipster",
+    "players": {
+      "online": 4,
+      "max": "80",
+      "list": [
+        {
+          "name": "wes ",
+          "raw": {
+            "ping": 112
+          }
+        },
+        {
+          "name": "Jadow",
+          "raw": {
+            "ping": 113
+          }
+        },
+        {
+          "name": "GAMBXT",
+          "raw": {
+            "ping": 51
+          }
+        },
+        {
+          "name": "Ghost Hendrix",
+          "raw": {
+            "ping": 20
+          }
+        }
+      ]
+    },
+    "assets": {
+      "vars": {
+        "Dev": "WPRP",
+        "Discord": "https://discord.gg/wprp",
+        "Website": "https://whatpixelrp.com",
+        "activitypubFeed": "WhatPixelRP@mstdn.social",
+      },
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAAGAAAABg..."
+    }
+  },
+  "timestamps": {
+    "date": "2/1/2022, 5:45:37 PM",
+    "unix": 1643737538
+  }
+}
+```
+
+## /v1/query/ark
+
+- Query an Ark: Survival Evolved server.
+- Request method: `GET`
+
+| **Parameter** | **Type** | **Details** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `host` | `string` | The IP address of the server to query. | `true` |
+| `port` | `int` | The port of the server. | `false` |
+| **Header** | **Type** | **Description** | **Required** |
+| Authorization | `string` | Your API access key. | `true` |
+| Content-Type | `string` | `application/json` | `false` |
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+```json
+{
+  "status": 200,
+  "data": {
+    "name": "MTSArk.co.uk [ARENA] Capture the Artifact - (v342.22)",
+    "map": "ArenaModMap",
+    "password": false,
+    "raw": {
+      "protocol": 17,
+      "folder": "ark_survival_evolved",
+      "game": "ARK: Survival Evolved",
+      "appId": 346110,
+      "numplayers": 56,
+      "numbots": 0,
+      "listentype": "d",
+      "environment": "w",
+      "secure": 1,
+      "version": "1.0.0.0",
+      "steamid": "90155733339275266",
+      "tags": [
+        "",
+        "OWNINGID:90155733339275266",
+        "OWNINGNAME:90155733339275266",
+        "NUMOPENPUBCONN:15",
+        "P2PADDR:90155733339275266",
+        "P2PPORT:7790",
+        "LEGACY_i:0"
+      ]
+    },
+    "maxplayers": 60,
+    "players": [
+      {
+        "name": "sir.jooe",
+        "raw": {
+          "score": 0,
+          "time": 24532.75390625
+        }
+      },
+      {
+        "name": "Gollum_07",
+        "raw": {
+          "score": 0,
+          "time": 7740.06591796875
+        }
+      },
+      {
+        "name": "Chickenmaster56",
+        "raw": {
+          "score": 0,
+          "time": 7736.474609375
+        }
+      },
+      {
+        "name": "123",
+        "raw": {
+          "score": 0,
+          "time": 5900.70751953125
+        }
+      }
+    ],
+    "bots": [],
+    "connect": "85.190.148.87:7790",
+    "ping": 96
+  },
+  "timestamps": {
+    "date": "2/1/2022, 5:50:13 PM",
+    "unix": 1643737813
   }
 }
 ```

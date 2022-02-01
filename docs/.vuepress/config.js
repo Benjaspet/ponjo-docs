@@ -35,9 +35,9 @@ module.exports = {
                 children: [
                     ["/ponjo-api/endpoints/Data.md", "Data Endpoint"],
                     ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
+                    ["/ponjo-api/endpoints/Pride.md", "Pride Endpoint"],
                     ["/ponjo-api/endpoints/Utility.md", "Utility"],
                     ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
-                    ["/ponjo-api/endpoints/Color.md", "Color Tools"],
                 ]
             },
             {
