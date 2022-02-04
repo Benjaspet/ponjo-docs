@@ -1,7 +1,3 @@
-## Error Responses
-
-Here you can find documentation of all error responses for all API endpoints.
-
 ### 🔴 400 ─ Bad Request
 
 - Malformed request syntax.

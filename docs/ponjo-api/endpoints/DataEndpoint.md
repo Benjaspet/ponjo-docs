@@ -32,6 +32,55 @@
 }
 ```
 
+## /v1/covid
+
+- Fetch COVID statistics for a nation.
+- Request type: `GET`
+
+| **Parameter** | **Type** | **Details** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `country` | `string` | The country to search. | `true` |
+| **Header** | **Type** | **Description** | **Required** |
+| Authorization | `string` | Your API access key. | `false` |
+| Connection | `string` | `keep-alive` | `false` |
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+```json
+{
+  "status": 200,
+  "data": {
+    "country": "Russia",
+    "countryData": {
+      "latitude": 60,
+      "longitude": 100,
+      "flag": "https://app.ponjo.club/assets/flags/ru.png"
+    },
+    "covidData": {
+      "active": 1669545,
+      "critical": 2300,
+      "cases": {
+        "total": 12452765,
+        "today": 168201
+      },
+      "deaths": {
+        "total": 334039,
+        "today": 682
+      },
+      "recovered": {
+        "total": 10449181,
+        "today": 58449
+      }
+    }
+  },
+  "timestamps": {
+    "date": "2/4/2022, 1:23:10 PM",
+    "unix": 1643980991
+  }
+}
+```
+
 ## /v1/chatbot
 
 - Receive a response from an AI chatbot.

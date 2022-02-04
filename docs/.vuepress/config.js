@@ -12,7 +12,6 @@ module.exports = {
     themeConfig: {
         lastUpdated: "Last Updated",
         nav: [
-            {text: "Pronoun API", link: "https://pronoun.space"},
             {text: "Elixir Music", link: "https://ponjo.club/invites/elixir"},
             {text: "Ben's Portfolio", link: "https://benpetrillo.dev"},
             {text: "Discord", link: "https://ponjo.club/discord"},
@@ -34,10 +33,12 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     ["/ponjo-api/endpoints/DataEndpoint.md", "Data Endpoint"],
-                    ["/ponjo-api/endpoints/SCPEndpoint.md", "SCP Foundation"],
+                    ["/ponjo-api/endpoints/SCPEndpoint.md", "SCP Endpoint"],
                     ["/ponjo-api/endpoints/PrideEndpoint.md", "Pride Endpoint"],
-                    ["/ponjo-api/endpoints/UtilityEndpoint.md", "Utility"],
-                    ["/ponjo-api/endpoints/GameQueryEndpoint.md", "Game Queries"],
+                    ["/ponjo-api/endpoints/ServiceEndpoint.md", "Service Endpoint"],
+                    ["/ponjo-api/endpoints/GameQueryEndpoint.md", "Game Query Endpoint"],
+                    ["/ponjo-api/endpoints/UtilityEndpoint.md", "Utility Endpoint"],
+                    ["/ponjo-api/endpoints/ElixirEndpoint.md", "Elixir Music API"]
                 ]
             },
             {
@@ -45,7 +46,6 @@ module.exports = {
                 collapsable: false,
                 sidebarDepth: 1,
                 children: [
-                    ["/ponjo-api/endpoints/ElixirEndpoint.md", "Elixir Music API"],
                     ["/elixir/ElixirMusic.md", "Bot Setup"],
                     ["/elixir/Tutorial.md", "Guide"],
                     ["/elixir/ElixirPrivacy.md", "Privacy Policy"]
