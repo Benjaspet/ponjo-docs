@@ -69,7 +69,7 @@
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
-| `count` | `int` | The amount of memes to fetch. | `false` |
+| `count` | `integer` | The amount of memes to fetch. | `false` |
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |

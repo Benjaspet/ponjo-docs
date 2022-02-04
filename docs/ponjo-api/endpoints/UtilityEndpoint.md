@@ -1,34 +1,3 @@
-## Hex Color Data
-
-Get data and assets of a hex color.
-
-| **Parameter** | **Type** | **Details** |
-| :---: | :---: | :---: | 
-| `hex` | `string` | The hex code of the color. |
-| **Header** | **Type** | **Description** |
-| Authorization | `string` | Your API access key. |
-| Content-Type | `string` | `application/json` or `img/png` |
-
-#### Method
-> This endpoint uses a `GET` request.
-
-### Sample Request
-
-```shell
-# METHOD: GET
-https://app.ponjo.club/v1/color?hex=32a852
-```
-
-### Sample Responses
-
-🟢 **Status: 200** ─ Success.
-
-```json
-{
-  "status": "not completed"
-}
-```
-
 ## Affirmations
 
 Retrieve a confidence-boosting affirmation.
@@ -58,19 +27,17 @@ Retrieve a confidence-boosting affirmation.
 }
 ```
 
-## Captcha Data
+## /v1/captcha
 
-Create a captcha with its resolution.
+- Create a captcha with its resolution.
+- Request method: `GET`
 
 | **Header** | **Type** | **Description** |
 | :---: | :---: | :---: | 
 | Authorization | `string` | Your API access key. |
 | Content-Type | `string` | `application/json` |
 
-#### Method
-> This endpoint uses a `GET` request.
-
-### Sample Responses
+### Sample Response
 
 🟢 **Status: 200** ─ Success.
 
@@ -86,4 +53,26 @@ Create a captcha with its resolution.
     "unix": 1634394350
   }
 }
+```
+
+## /v1/qr
+
+- Generate a QR code.
+- Request method: `GET`
+
+| **Parameter** | **Type** | **Details** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `text` | `string` | The text for the QR code. | `true` |
+| `size` | `integer` | The size of the QR code. | `true` |
+| `background` | `uri string` | The background image. | `false` |
+| **Header** | **Type** | **Description** | **Required** |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+
+```
+<QR.png> img/png
 ```
