@@ -157,7 +157,7 @@
         "Dev": "WPRP",
         "Discord": "https://discord.gg/wprp",
         "Website": "https://whatpixelrp.com",
-        "activitypubFeed": "WhatPixelRP@mstdn.social",
+        "activitypubFeed": "WhatPixelRP@mstdn.social"
       },
       "icon": "iVBORw0KGgoAAAANSUhEUgAAAGAAAABg..."
     }
