@@ -29,11 +29,11 @@ Elixir supported platforms like Spotify and SoundCloud. Unfortunately, due to re
 
 <img src="../../images/elixir/PlaySong.gif" alt="Play a Song">
 
-## Adding Filters
+## View the Track Currently Playing
 
-You can add a variety of filters to your songs to give them a different feel. To do so, run the `/filter` command.
+By running the `/nowplaying` command, you can view the song that is currently playing. its artist, duration, and more.
 
-<img src="../../images/elixir/Filter.gif" alt="Add a Filter">
+<img src="../../images/elixir/NowPlaying.gif" alt="Add a Filter">
 
 ## Viewing the Queue
 
@@ -43,13 +43,13 @@ You can also view all the songs that are in the server queue. To do so, run the 
 
 ## Skipping Songs
 
-You can skip the song currently playing and play the next one in the queue by using the `/skip` command. If there are no more songs left in the queue to play, Elixir will leave the voice channel.
+You can skip to any other track in the queue by running the `/skip` command. If a track number parameter is specified, Elixir will skip to the track in that position. In the case that there are no more songs left in the queue to play, Elixir will leave the voice channel.
 
 <img src="../../images/elixir/Skip.gif" alt="Skip a Song">
 
 ## Changing the Volume
 
-You can also modify the volume of the songs being played. Run the `/volume` command, and then select an amplifier from the menu to either increase or decrease the output volume. This feature is commonly used to improve bitrate.
+You can also modify the volume of the songs being played. Run the `/volume` command, and then type a volume integer between 0 and 150 to either increase or decrease the output volume.
 
 <img src="../../images/elixir/Volume.gif" alt="Change the Volume">
 

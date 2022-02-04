@@ -33,11 +33,11 @@ module.exports = {
                 collapsable: false,
                 sidebarDepth: 1,
                 children: [
-                    ["/ponjo-api/endpoints/Data.md", "Data Endpoint"],
-                    ["/ponjo-api/endpoints/SCP-Endpoint.md", "SCP Foundation"],
-                    ["/ponjo-api/endpoints/Pride.md", "Pride Endpoint"],
-                    ["/ponjo-api/endpoints/Utility.md", "Utility"],
-                    ["/ponjo-api/endpoints/Game-Queries.md", "Game Queries"],
+                    ["/ponjo-api/endpoints/DataEndpoint.md", "Data Endpoint"],
+                    ["/ponjo-api/endpoints/SCPEndpoint.md", "SCP Foundation"],
+                    ["/ponjo-api/endpoints/PrideEndpoint.md", "Pride Endpoint"],
+                    ["/ponjo-api/endpoints/UtilityEndpoint.md", "Utility"],
+                    ["/ponjo-api/endpoints/GameQueryEndpoint.md", "Game Queries"],
                 ]
             },
             {
@@ -45,7 +45,7 @@ module.exports = {
                 collapsable: false,
                 sidebarDepth: 1,
                 children: [
-                    ["/ponjo-api/endpoints/Elixir-Music.md", "Elixir Music API"],
+                    ["/ponjo-api/endpoints/ElixirEndpoint.md", "Elixir Music API"],
                     ["/elixir/ElixirMusic.md", "Bot Setup"],
                     ["/elixir/Tutorial.md", "Guide"],
                     ["/elixir/ElixirPrivacy.md", "Privacy Policy"]
