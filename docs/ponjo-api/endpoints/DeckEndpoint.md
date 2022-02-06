@@ -13,8 +13,7 @@
 
 ### Sample Response
 
-🟢 **Status: 200** ─ Success.
-`Hand: AH,KD,KH,AS,AD`
+🟢 **Status: 200** ─ Success. `Hand: AH,KD,KH,AS,AD`
 ```json
 {
   "status": 200,
@@ -44,7 +43,7 @@
 ### Sample Response
 
 🟢 **Status: 200** ─ Success.
-`Hand: AH,KD,KH,AS,AD`
+
 ```json
 {
   "status": 200,

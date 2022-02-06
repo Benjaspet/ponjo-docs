@@ -1,6 +1,6 @@
 module.exports = {
-    title: "Ponjo Docs",
-    description: "The official documentation for all Ponjo Team services.",
+    title: "Ponjo Studios Documentation",
+    description: "The official documentation for all Ponjo Studios services.",
     port: 8000,
     head: [
         ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Crescent-Logo.png"}],
@@ -12,6 +12,7 @@ module.exports = {
     themeConfig: {
         lastUpdated: "Last Updated",
         nav: [
+            {text: "Our Website", link: "https://ponjo.club"},
             {text: "Elixir Music", link: "https://ponjo.club/invites/elixir"},
             {text: "Ben's Portfolio", link: "https://benpetrillo.dev"},
             {text: "Discord", link: "https://ponjo.club/discord"},
