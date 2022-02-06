@@ -34,6 +34,7 @@ module.exports = {
                 children: [
                     ["/ponjo-api/endpoints/DataEndpoint.md", "Data Endpoint"],
                     ["/ponjo-api/endpoints/SCPEndpoint.md", "SCP Endpoint"],
+                    ["/ponjo-api/endpoints/DeckEndpoint.md", "Card Deck Endpoint"],
                     ["/ponjo-api/endpoints/PrideEndpoint.md", "Pride Endpoint"],
                     ["/ponjo-api/endpoints/ServiceEndpoint.md", "Service Endpoint"],
                     ["/ponjo-api/endpoints/GameQueryEndpoint.md", "Game Query Endpoint"],
