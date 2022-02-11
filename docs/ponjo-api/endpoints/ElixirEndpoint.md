@@ -186,3 +186,100 @@
   }
 }
 ```
+
+## /v1/elixir/playlist/fetch
+
+- Fetch a custom playlist by ID.
+- Request type: `GET`
+
+| **Parameter** | **Type** | **Details** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `id` | `string` | The custom playlist ID. | `true` |
+| **Header** | **Type** | **Description** | **Required** |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+```json
+{
+  "status": 200,
+  "data": {
+    "info": {
+      "id": "eerievacation",
+      "name": "Caribbean Groove",
+      "description": "Some chill vacation-themed tracks.",
+      "playlistCoverUrl": "https://media.cntraveler.com/photos/60e612ae0a709e97d73d9c60/1:1/w_3840,h_3840,c_limit/Beach%20Vacation%20Packing%20List-2021_GettyImages-1030311160.jpg",
+      "author": "460177285954142208",
+      "volume": 100
+    },
+    "tracks": [
+      {
+        "title": "Copacabana",
+        "url": "https://open.spotify.com/track/4QuhF1hA9hDWaXM7pvXgLv",
+        "artist": "Steel Drum Island",
+        "duration": 258640,
+        "isrc": "ushm80892301"
+      },
+      {
+        "title": "Matilda",
+        "url": "https://open.spotify.com/track/079IZgk3Cq5hZExxWlSoIw",
+        "artist": "Steeldrums & Island Music",
+        "duration": 179066,
+        "isrc": "BBA019100471"
+      },
+      {
+        "title": "Island Party",
+        "url": "https://open.spotify.com/track/1bXuNC1nB4G7D8dL38xs1r",
+        "artist": "Caribbean Sound",
+        "duration": 157335,
+        "isrc": "USA2P1496871"
+      },
+      {
+        "title": "Limbo Rock",
+        "url": "https://open.spotify.com/track/0mHUITW2RJhEeTRHIMUD4i",
+        "artist": "Steel Drum Island",
+        "duration": 217493,
+        "isrc": "ushm80885231"
+      }
+    ],
+    "options": {
+      "shuffle": false,
+      "repeat": false
+    }
+  },
+  "timestamps": {
+    "date": "2/11/2022, 9:42:38 AM",
+    "unix": 1644590559
+  }
+}
+```
+
+## /v1/elixir/playlist/queue
+
+- Queue a custom playlist by ID.
+- Request type: `POST`
+
+| **Parameter** | **Type** | **Details** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `id` | `string` | The custom playlist ID. | `true` |
+| `guild` | `snowflake` | The guild ID. | `true` |
+| `channel` | `snowflake` | The channel ID. | `true` |
+| **Header** | **Type** | **Description** | **Required** |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+```json
+{
+  "status": 200,
+  "messages": "Successfully queued the custom playlist.",
+  "timestamps": {
+    "date": "2/11/2022, 9:44:45 AM",
+    "unix": 1644590685
+  }
+}
+```
