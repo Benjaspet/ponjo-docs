@@ -40,6 +40,7 @@ module.exports = {
                     ["/ponjo-api/endpoints/ServiceEndpoint.md", "Service Endpoint"],
                     ["/ponjo-api/endpoints/GameQueryEndpoint.md", "Game Query Endpoint"],
                     ["/ponjo-api/endpoints/UtilityEndpoint.md", "Utility Endpoint"],
+                    ["/ponjo-api/endpoints/RandomEndpoint.md", "Random Endpoint"],
                     ["/ponjo-api/endpoints/ElixirEndpoint.md", "Elixir Music API"]
                 ]
             },
