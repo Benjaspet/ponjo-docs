@@ -34,14 +34,15 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     ["/ponjo-api/endpoints/DataEndpoint.md", "Data Endpoint"],
-                    ["/ponjo-api/endpoints/SCPEndpoint.md", "SCP Endpoint"],
                     ["/ponjo-api/endpoints/DeckEndpoint.md", "Card Deck Endpoint"],
-                    ["/ponjo-api/endpoints/PrideEndpoint.md", "Pride Endpoint"],
-                    ["/ponjo-api/endpoints/ServiceEndpoint.md", "Service Endpoint"],
+                    ["/ponjo-api/endpoints/ElixirEndpoint.md", "Elixir Endpoint"],
                     ["/ponjo-api/endpoints/GameQueryEndpoint.md", "Game Query Endpoint"],
-                    ["/ponjo-api/endpoints/UtilityEndpoint.md", "Utility Endpoint"],
+                    ["/ponjo-api/endpoints/ImageManipulationEndpoint.md", "Image Endpoint"],
+                    ["/ponjo-api/endpoints/MiscellaneousEndpoint.md", "Miscellaneous Endpoint"],
+                    ["/ponjo-api/endpoints/PrideEndpoint.md", "Pride Endpoint"],
                     ["/ponjo-api/endpoints/RandomEndpoint.md", "Random Endpoint"],
-                    ["/ponjo-api/endpoints/ElixirEndpoint.md", "Elixir Music API"]
+                    ["/ponjo-api/endpoints/SCPEndpoint.md", "SCP Endpoint"],
+                    ["/ponjo-api/endpoints/ServiceEndpoint.md", "Service Endpoint"]
                 ]
             },
             {

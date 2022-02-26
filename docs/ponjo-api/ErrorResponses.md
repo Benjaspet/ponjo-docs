@@ -45,6 +45,21 @@
 }
 ```
 
+### 🔴 410 ─ Gone
+
+- The requested resource does not exist, contains invalid data, or is not available.
+
+```json
+{
+  "status": 410,
+  "message": "Resource is not available.",
+  "timestamps": {
+    "date": "10/16/2021, 9:02:49 PM",
+    "unix": 1634418169
+  }
+}
+```
+
 ### 🔴 429 ─ Too Many Requests
 
 - You've sent too many requests in a given timeframe.

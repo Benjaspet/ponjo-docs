@@ -1,7 +1,7 @@
 ## /v1/elixir/queue
 
 - Get the music queue for a guild. 
-- Request type: `GET`
+- Request method: `GET`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -45,7 +45,7 @@
 ## /v1/elixir/nowplaying
 
 - Get information about the track currently playing in a guild.
-- Request type: `GET`
+- Request method: `GET`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -80,7 +80,7 @@
 ## /v1/elixir/pause
 
 - Pause the music player in a guild.
-- Request type: `POST`
+- Request method: `POST`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -107,7 +107,7 @@
 ## /v1/elixir/resume
 
 - Resume the music player in a guild.
-- Request type: `POST`
+- Request method: `POST`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -134,7 +134,7 @@
 ## /v1/elixir/shuffle
 
 - Shuffle the music queue in a guild.
-- Request type: `POST`
+- Request method: `POST`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -161,7 +161,7 @@
 ## /v1/elixir/play
 
 - Play a track or playlist in a guild.
-- Request type: `POST`
+- Request method: `POST`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -197,7 +197,7 @@
 ## /v1/elixir/playlist/fetch
 
 - Fetch a custom playlist by ID.
-- Request type: `GET`
+- Request method: `GET`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -266,7 +266,7 @@
 ## /v1/elixir/playlist/queue
 
 - Queue a custom playlist by ID.
-- Request type: `POST`
+- Request method: `POST`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -295,7 +295,7 @@
 ## /v1/elixir/join
 
 - Have Elixir join a voice channel.
-- Request type: `POST`
+- Request method: `POST`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |

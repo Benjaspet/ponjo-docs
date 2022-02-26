@@ -2,7 +2,7 @@
 
 - Evaluate any poker hand.
 - Hands must have 3, 5, 6, or 7 cards.
-- Request type: `GET`
+- Request method: `GET`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -33,7 +33,7 @@
 ## /v1/decks/create
 
 - Create a virtual deck of cards.
-- Request type: `POST`
+- Request method: `POST`
 
 | **Header** | **Type** | **Description** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -74,7 +74,7 @@
 ## /v1/decks/find
 
 - Fetch a virtual deck of cards by ID.
-- Request type: `GET`
+- Request method: `GET`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -116,7 +116,7 @@
 ## /v1/decks/shuffle
 
 - Shuffle a deck of cards by ID.
-- Request type: `PATCH`
+- Request method: `PATCH`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -156,7 +156,7 @@
 ## /v1/decks/draw
 
 - Draw cards from a virtual deck.
-- Request type: `PATCH`
+- Request method: `PATCH`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
@@ -219,7 +219,7 @@
 ## /v1/decks/reset
 
 - Reset a virtual deck of cards.
-- Request type: `POST`
+- Request method: `POST`
 
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |

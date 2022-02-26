@@ -1,3 +1,73 @@
+## /v1/random/month
+
+- Get a random month of the year.
+- Request type: `GET`
+
+| **Header** | **Type** | **Description** | **Required** |
+| :---: | :---: | :---: | :---: |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+
+```json
+{
+  "status": 200,
+  "data": "March",
+  "timestamps": {
+    "date": "2/26/2022, 8:00:47 PM",
+    "unix": 1645905648
+  }
+}
+```
+
+## /v1/random/timezone
+
+- Get a random timezone.
+- Request type: `GET`
+
+| **Header** | **Type** | **Description** | **Required** |
+| :---: | :---: | :---: | :---: |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+
+```json
+{
+  "status": 200,
+  "data": [
+    {
+      "timezone": {
+        "name": "UTC+12",
+        "abbr": "U",
+        "offset": 12,
+        "isdst": false,
+        "text": "(UTC+12:00) Coordinated Universal Time+12",
+        "utc": [
+          "Etc/GMT-12",
+          "Pacific/Funafuti",
+          "Pacific/Kwajalein",
+          "Pacific/Majuro",
+          "Pacific/Nauru",
+          "Pacific/Tarawa",
+          "Pacific/Wake",
+          "Pacific/Wallis"
+        ]
+      }
+    }
+  ],
+  "timestamps": {
+    "date": "2/26/2022, 8:01:40 PM",
+    "unix": 1645905701
+  }
+}
+```
+
 ## /v1/random/userprofile
 
 - Get a random user profile.

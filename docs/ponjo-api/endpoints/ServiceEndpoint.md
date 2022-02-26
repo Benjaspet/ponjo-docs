@@ -1,3 +1,54 @@
+## /v1/roboeerie/tags
+
+- Fetch an amount of tags for the RoboEerie Discord bot.
+- Request type: `GET`
+
+| **Parameter** | **Type** | **Details** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `count` | `integer` | The amount of tags. | `false` |
+| **Header** | **Type** | **Description** | **Required** |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+```json
+{
+  "status": 200,
+  "data": [
+    {
+      "tag": "mystery",
+      "content": "https://images-ext-1.discordapp.net/external/bPXPRsqqqG1Q-u09qoSvSkrfL92ZnYltmkWVyOTa-9g/https/c.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif",
+      "author": "460177285954142208",
+      "guild": "828296827882831913",
+      "createdAt": "2021-10-18T03:06:36.374Z",
+      "updatedAt": "2021-10-19T02:04:54.132Z"
+    },
+    {
+      "tag": "eerie",
+      "content": "Hey there! I'm Eerie (also known as [Ben](https://benpetrillo.dev/profile)) and I'm an 18-year-old high school student, developer, gamer, and creative writer. I also enjoy spending time with friends. During the school year, I'm quite busy and have less time for development. With respect to development, I work on both the frontend and the backend, developing websites, web applications, and more. I have approximately three years of experience in fullstack development, with most experience in Java, PHP, JavaScript, and TypeScript.",
+      "author": "460177285954142208",
+      "guild": "828296827882831913",
+      "createdAt": "2021-10-18T03:15:34.493Z",
+      "updatedAt": "2021-10-24T20:25:27.075Z"
+    },
+    {
+      "tag": "discord.py",
+      "content": "https://discord.gg/dpy",
+      "author": "460177285954142208",
+      "guild": "828296827882831913",
+      "createdAt": "2021-10-18T11:02:39.206Z",
+      "updatedAt": "2021-10-18T11:02:39.206Z"
+    }
+  ],
+  "timestamps": {
+    "date": "2/4/2022, 1:07:18 PM",
+    "unix": 1643980038
+  }
+}
+```
+
 ## /v1/urlshortener/create
 
 - Create a shortened URL.
@@ -76,57 +127,6 @@
   "timestamps": {
     "date": "2/4/2022, 1:11:21 PM",
     "unix": 1643980282
-  }
-}
-```
-
-## /v1/roboeerie/tags
-
-- Fetch an amount of tags for the RoboEerie Discord bot.
-- Request type: `GET`
-
-| **Parameter** | **Type** | **Details** | **Required** |
-| :---: | :---: | :---: | :---: |
-| `count` | `integer` | The amount of tags. | `false` |
-| **Header** | **Type** | **Description** | **Required** |
-| Authorization | `string` | Your API access key. | `true` |
-| Connection | `string` | `keep-alive` | `false` |
-
-### Sample Response
-
-🟢 **Status: 200** ─ Success.
-```json
-{
-  "status": 200,
-  "data": [
-    {
-      "tag": "mystery",
-      "content": "https://images-ext-1.discordapp.net/external/bPXPRsqqqG1Q-u09qoSvSkrfL92ZnYltmkWVyOTa-9g/https/c.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif",
-      "author": "460177285954142208",
-      "guild": "828296827882831913",
-      "createdAt": "2021-10-18T03:06:36.374Z",
-      "updatedAt": "2021-10-19T02:04:54.132Z"
-    },
-    {
-      "tag": "eerie",
-      "content": "Hey there! I'm Eerie (also known as [Ben](https://benpetrillo.dev/profile)) and I'm an 18-year-old high school student, developer, gamer, and creative writer. I also enjoy spending time with friends. During the school year, I'm quite busy and have less time for development. With respect to development, I work on both the frontend and the backend, developing websites, web applications, and more. I have approximately three years of experience in fullstack development, with most experience in Java, PHP, JavaScript, and TypeScript.",
-      "author": "460177285954142208",
-      "guild": "828296827882831913",
-      "createdAt": "2021-10-18T03:15:34.493Z",
-      "updatedAt": "2021-10-24T20:25:27.075Z"
-    },
-    {
-      "tag": "discord.py",
-      "content": "https://discord.gg/dpy",
-      "author": "460177285954142208",
-      "guild": "828296827882831913",
-      "createdAt": "2021-10-18T11:02:39.206Z",
-      "updatedAt": "2021-10-18T11:02:39.206Z"
-    }
-  ],
-  "timestamps": {
-    "date": "2/4/2022, 1:07:18 PM",
-    "unix": 1643980038
   }
 }
 ```

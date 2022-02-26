@@ -1,48 +1,58 @@
 # Elixir Music
 
-## Features
+Elixir is an advanced music bot for your Discord server with support for countless platforms. Enjoy your favorite tunes with fast load times, pristine audio
+quality, and more -- all without the hassle of having to download and install a bunch of software.
 
-- Elixir makes it possible to listen to your favorite tunes with all of your friends, with pristine quality indistinguishable from the original soundtrack. With over 30 commands, you'll be able to easily listen to all your favorite tunes, and then some. Elixir makes it easy to add songs or remove songs from your queue. You can also play songs and playlist from other popular applications, including but not limited to Spotify, SoundCloud, and more.
-- Elixir is developed to allow you to play all of your favorite songs with ease, and to get it fully up and running in your Discord server in no time at all. Enjoy music with your friends, and meet new people with similar tastes. Elixir is highly configurable, allowing you to set DJ roles and even prevent duplicate songs from playing.
-- With Elixir, all members of your server will be able to listen to their favorite tunes. If more members are listening to music in voice channels, they are more likely to remain in and become more involved in your community. Elixir makes it easy to enjoy listening to your favorite music with a group of friends or by yourself. What's not to love?
-- We're always here to help, with quick & reliable support. Find a bug or want to make a suggestion for a new feature? Don't hesitate to contact us by joining our [Discord server.](https://ponjo.club/discord)
+## Our Signature Features
 
-### Migration to Slash Commands
+- Multi-Platform Support
+  - We support popular music platforms like YouTube, Spotify, and Apple Music.
+  - You can play music by inputting a search query or by using a direct link to a song.
+- Multi-Server Support
+  - You can have multiple servers using the same bot.
+  - Elixir has 4 separate instances, so different people in your server can listen to different tracks.
+- Advanced Queue Management System
+  - Unlike any other Discord music bot, Elixir has a powerful queue management system. View all tracks in the queue, their hyperlinks, and more.
+  - Skip to any track in the queue by its position, view data about any track, and more.
+- Custom Playlist System
+  - Arguably Elixir's signature feature, Elixir has a playlist system that allows you to create and share playlists with your friends across Discord. All custom playlists are global and can be viewed and played by all people in Elixir's userbase.
+  - Customize your custom playlist to your liking -- add songs, remove songs, add playlists, set the playlist's name, set a description, a cover URL, and more.
+- Custom Playlist Settings
+  - Configure your playlist to start with a custom volume, a custom loop setting, and more.
+- Lyrics
+  - Elixir can fetch lyrics for any song you want. This feature is powered by [Genius](https://genius.com/).
+- Quality Support
+  - We're always here to help, with quick & reliable support. Find a bug or want to make a suggestion for a new feature? Don't hesitate to contact us by joining our [Discord server.](https://ponjo.club/discord)
+
+### Fun Facts About Elixir
 
 ::: tip Removal of Prefix Commands
-Elixir is no longer using traditional prefix commands (`e!help`). All of Elixir's commands can be accessed through Discord's built-in slash commands. Simply type `/` in any text channel to view all slash commands for your server, and then select Elixir's logo to view all available commands and their descriptions & arguments.
+- Elixir was originally created by Ben Petrillo on May 1, 2021.
+    - Magix joined the development team in January 2022.
+- Elixir is written in the Java programming language.
+- More than 235,000 songs have been played using Elixir.
+- Elixir has 4 separate instances, so different people in your server can listen to different tracks.
+- The actual bot application of Elixir was originally used as a moderation bot, but was changed shortly after.
 :::
 
 ## Privacy Policy
 
 Your privacy is important to us. Our policy is to respect your privacy regarding any information we may collect from you across our websites, services, and utilities. To view Elixir's privacy policy, [click here]().
 
-## Commands
-
-Below you can find a list of all commands, their usages, and examples.
-
-| Name | Usage | Description |
-| :---: | :---: | :---: | 
-| `play` | `/play <song:playlist>` | Add a song or playlist of songs to the queue. |
-| `volume` | `/volume <amplifier>` | Amplify or lower the song's volume. |
-| `filter` | `/filter {type}` | Apply or remove audio filters from the currently playing song. |
-| `rewind` | `/rewind {duration}` | Rewind the currently playing song by the specified duration. |
-| `seek` | `/seek {duration}` | Seek through the song. |
-| `nowplaying` | `/nowplaying` | View information about the song currently playing. |
-| `pause` | `/pause` | Pause the song that is currently playing. |
-| `queue` | `/queue` | View all songs in the queue. |
-| `resume` | `/resume` | Resume the currently playing song. |
-| `loop` | `/loop {mode}` | Loop the queue or current song. |
-| `shuffle` | `/shuffle` | Shuffle the song queue. |
-| `stop` | `/stop` | Stop Elixir from playing and have it leave the voice channel. |
-| `help` | `/help {category}` | Show a list of commands, FAQs, and other resources. |
-| `info` | `/info` | View Elixir's information & statistics. |
-
-## Examples
-
-![Elixir](https://raw.githubusercontent.com/Eerie6560/Archives/main/images/elixir/docs/PlayCommandQuery.png)
-
 ## Changelog
+
+::: warning Version 4.0 ─ 12/14/2021
+
+- Rewrite in Java.
+- Add support for Spotify, Apple Music, and YouTube.
+- Playlist support for up to 2,000 tracks.
+- Faster load times.
+- Better audio quality.
+- Added back lyric system.
+- IPv6 rotation to avoid ratelimiting.
+- Custom playlist system with custom settings.
+
+:::
 
 ::: warning Version 3.0 ─ 8/2/2021
 

@@ -1,6 +1,37 @@
-## /v1/pride/flags
+## /v1/pride/avatar
 
 <img src="../../../images/lgbtq/ProgressPride.png" alt="Pride" width="91" height="54">
+
+- Create a pride-flaired avatar.
+- Request method: `POST`
+
+| **Parameter** | **Type** | **Details** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `flair` | `string` | The flair to add. | `true` |
+| `avatar` | `uri string` | The avatar URL. | `true` |
+| `format` | `string` | `png` or `jpeg` or `base64` | `false` |
+| **Header** | **Type** | **Description** | **Required** |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
+
+### Sample Response
+
+```json
+{
+    "status": 200,
+    "timestamps": {
+        "date": "2/1/2022, 6:37:53 PM",
+        "unix": 1643740673
+    },
+    "image": {
+        "flair": "bisexual",
+        "input": "https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Crescent-Logo.png",
+        "output": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAA..."
+    }
+}
+```
+
+## /v1/pride/flags
 
 - Get an image of a pride flag.
 - Request type: `GET`
@@ -16,9 +47,7 @@
 
 🟢 **Status: 200** ─ Success.
 
-```
-<Pansexual.png> img/png
-```
+<img src="../../../images/lgbtq/Pansexual.png" alt="Pansexual">
 
 ## /v1/pride/orientations
 
@@ -72,37 +101,6 @@
     "timestamps": {
         "date": "2/1/2022, 6:32:32 PM",
         "unix": 1643740353
-    }
-}
-```
-
-## /v1/pride/avatar
-
-- Create a pride-flaired avatar.
-- Request type: `POST`
-
-| **Parameter** | **Type** | **Details** | **Required** |
-| :---: | :---: | :---: | :---: |
-| `flair` | `string` | The flair to add. | `true` |
-| `avatar` | `uri string` | The avatar URL. | `true` |
-| `format` | `string` | `png` or `jpeg` or `base64` | `false` |
-| **Header** | **Type** | **Description** | **Required** |
-| Authorization | `string` | Your API access key. | `true` |
-| Connection | `string` | `keep-alive` | `false` |
-
-### Sample Response
-
-```json
-{
-    "status": 200,
-    "timestamps": {
-        "date": "2/1/2022, 6:37:53 PM",
-        "unix": 1643740673
-    },
-    "image": {
-        "flair": "bisexual",
-        "input": "https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Crescent-Logo.png",
-        "output": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAA..."
     }
 }
 ```
