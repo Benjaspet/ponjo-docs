@@ -6,6 +6,7 @@
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
 | `guild` | `snowflake` | The guild ID. | `true` |
+| `bot` | `snowflake` | The bot ID. | `true` |
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |
@@ -49,6 +50,7 @@
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
 | `guild` | `snowflake` | The guild ID. | `true` |
+| `bot` | `snowflake` | The bot ID. | `true` |
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |
@@ -83,6 +85,7 @@
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
 | `guild` | `snowflake` | The guild ID. | `true` |
+| `bot` | `snowflake` | The bot ID. | `true` |
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |
@@ -109,6 +112,7 @@
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
 | `guild` | `snowflake` | The guild ID. | `true` |
+| `bot` | `snowflake` | The bot ID. | `true` |
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |
@@ -135,6 +139,7 @@
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
 | `guild` | `snowflake` | The guild ID. | `true` |
+| `bot` | `snowflake` | The bot ID. | `true` |
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |
@@ -161,6 +166,8 @@
 | **Parameter** | **Type** | **Details** | **Required** |
 | :---: | :---: | :---: | :---: |
 | `guild` | `snowflake` | The guild ID. | `true` |
+| `channel` | `snowflake` | The voice channel ID. | `true` |
+| `bot` | `snowflake` | The bot ID. | `true` |
 | `query` | `base64 or string` | The track or playlist to play. | `true` |
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
@@ -266,6 +273,7 @@
 | `id` | `string` | The custom playlist ID. | `true` |
 | `guild` | `snowflake` | The guild ID. | `true` |
 | `channel` | `snowflake` | The channel ID. | `true` |
+| `bot` | `snowflake` | The bot ID. | `true` |
 | **Header** | **Type** | **Description** | **Required** |
 | Authorization | `string` | Your API access key. | `true` |
 | Connection | `string` | `keep-alive` | `false` |
@@ -277,6 +285,34 @@
 {
   "status": 200,
   "messages": "Successfully queued the custom playlist.",
+  "timestamps": {
+    "date": "2/11/2022, 9:44:45 AM",
+    "unix": 1644590685
+  }
+}
+```
+
+## /v1/elixir/join
+
+- Have Elixir join a voice channel.
+- Request type: `POST`
+
+| **Parameter** | **Type** | **Details** | **Required** |
+| :---: | :---: | :---: | :---: |
+| `guild` | `snowflake` | The guild ID. | `true` |
+| `channel` | `snowflake` | The channel ID. | `true` |
+| `bot` | `snowflake` | The bot ID. | `true` |
+| **Header** | **Type** | **Description** | **Required** |
+| Authorization | `string` | Your API access key. | `true` |
+| Connection | `string` | `keep-alive` | `false` |
+
+### Sample Response
+
+🟢 **Status: 200** ─ Success.
+```json
+{
+  "status": 200,
+  "messages": "Successfully joined the voice channel.",
   "timestamps": {
     "date": "2/11/2022, 9:44:45 AM",
     "unix": 1644590685
