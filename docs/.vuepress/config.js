@@ -10,7 +10,6 @@ module.exports = {
         lineNumbers: false
     },
     themeConfig: {
-        lastUpdated: "Last Updated",
         nav: [
             {text: "Our Website", link: "https://ponjo.club"},
             {text: "Elixir Music", link: "https://ponjo.club/invites/elixir"},

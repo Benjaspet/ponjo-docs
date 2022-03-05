@@ -10,9 +10,7 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "dependencies": {
-    "vuepress": "^1.8.2",
-    "yarn": "^1.22.17"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
 }
