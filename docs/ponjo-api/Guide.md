@@ -1,7 +1,3 @@
-::: slot footer
-MIT Licensed | Copyright © 2018-present [Evan You](https://github.com/yyx990803)
-:::
-
 ## Getting Started
 
 The Ponjo API serves all your developer utility needs. Countless endpoints, fast response times, and JSON responses. Integrating utility services into your application has never been easier. To use the Ponjo API, you need to obtain authentication.
