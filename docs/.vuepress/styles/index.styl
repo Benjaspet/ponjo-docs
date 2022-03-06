@@ -83,6 +83,10 @@ tr
 
 @media screen and (max-width: $MQMobile) {
 
+  .sidebar {
+    width: 100%;
+  }
+
   .sidebar-open {
     position: fixed;
   }
@@ -90,6 +94,8 @@ tr
   .sidebar .sidebar-open {
     top: 0;
     bottom: -250;
+    width: 100%;
+    overflow: hidden;
   }
 
 };
