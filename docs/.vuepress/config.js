@@ -25,14 +25,7 @@ module.exports = {
                 children: [
                     ["/ponjo-api/Guide.md", "Guide"],
                     ["/ponjo-api/Endpoints.md", "Endpoints"],
-                    ["/ponjo-api/ErrorResponses.md", "Handling Errors"]
-                ]
-            },
-            {
-                title: "Endpoints",
-                collapsable: false,
-                sidebarDepth: 1,
-                children: [
+                    ["/ponjo-api/ErrorResponses.md", "Handling Errors"],
                     ["/ponjo-api/endpoints/DataEndpoint.md", "Data Endpoint"],
                     ["/ponjo-api/endpoints/DeckEndpoint.md", "Card Deck Endpoint"],
                     ["/ponjo-api/endpoints/ElixirEndpoint.md", "Elixir Endpoint"],
@@ -54,7 +47,17 @@ module.exports = {
                     ["/elixir/Tutorial.md", "Guide"],
                     ["/elixir/ElixirPrivacy.md", "Privacy Policy"]
                 ]
-            }
+            },
+            {
+                title: "AdvancedCommandHandler",
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    ["/ach/Setup.md", "Setup"],
+                    ["/ach/Examples.md", "Examples"],
+                    ["/ach/ClassesAndMethods.md", "Classes & Methods"]
+                ]
+            },
         ],
         logo: "https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Crescent-Logo.png",
     }
