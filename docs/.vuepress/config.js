@@ -58,16 +58,6 @@ module.exports = {
                     ["/ach/ClassesAndMethods.md", "Classes & Methods"],
                     ["/ach/Types.md", "Types"]
                 ]
-            },
-            {
-                title: "PonjoPyWrapper",
-                collapsable: false,
-                sidebarDepth: 1,
-                children: [
-                    [],
-                    [],
-                    []
-                ]
             }
         ],
         logo: "https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Crescent-Logo.png",
