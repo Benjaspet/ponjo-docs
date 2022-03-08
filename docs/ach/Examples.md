@@ -35,7 +35,7 @@ export default {client, handler};
 - Then, create a command class like the one below, passing in a `super()` call to the AdvancedCommand class.
 - In the `super()` call, pass in the name of the command and the command data.
 - You can use the `CommandBuilder`, `OptionBuilder`, and `ChoiceBuilder` classes to create the command data.
-- Make sure to reference the [extended documentation](./docs/ach/ClassesAndMethods.md) to learn more.
+- Make sure to reference the [extended documentation](docs/ach/ClassesAndMethods.md) to learn more.
 
 `TestCommand.ts`
 

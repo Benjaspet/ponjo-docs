@@ -1,7 +1,7 @@
 {
   "name": "ponjo-docs",
   "version": "0.2.2",
-  "description": "The official documentation for services created by the Ponjo Team.",
+  "description": "The official documentation for Ponjo Studios services.",
   "main": "index.js",
   "author": "Ben Petrillo",
   "license": "MIT",
