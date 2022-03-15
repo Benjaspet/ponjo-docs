@@ -49,6 +49,15 @@ module.exports = {
                 ]
             },
             {
+                title: "PonjoPastes API",
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    ["/ponjopastes/Intro.md", "Introduction"],
+                    ["/ponjopastes/Documentation.md", "Documentation"]
+                ]
+            },
+            {
                 title: "AdvancedCH",
                 collapsable: false,
                 sidebarDepth: 1,
