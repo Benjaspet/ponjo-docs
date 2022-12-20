@@ -12,10 +12,9 @@ module.exports = {
     themeConfig: {
         lastUpdated: "Last Updated",
         nav: [
-            {text: "Our Website", link: "https://ponjo.club"},
-            {text: "Elixir Music", link: "https://ponjo.club/invites/elixir"},
-            {text: "Ben's Portfolio", link: "https://benpetrillo.dev"},
-            {text: "Discord", link: "https://ponjo.club/discord"},
+            {text: "Ponjo Studios", link: "https://ponjo.club"},
+            {text: "Invite Elixir", link: "https://ponjo.club/invites/elixir"},
+            {text: "About Our Founder", link: "https://benpetrillo.dev"},
         ],
         sidebar: [
             {
@@ -49,6 +48,14 @@ module.exports = {
                 ]
             },
             {
+                title: "PonjoPastes API",
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    ["/pastes/PonjoPastes.md", "API Endpoints"]
+                ]
+            },
+            {
                 title: "AdvancedCH",
                 collapsable: false,
                 sidebarDepth: 1,
@@ -58,7 +65,15 @@ module.exports = {
                     ["/ach/ClassesAndMethods.md", "Classes & Methods"],
                     ["/ach/Types.md", "Types"]
                 ]
-            }
+            },
+            {
+                title: "Game API",
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    ["/gameapi/GameAPI.md", "Game API Routes"]
+                ]
+            },
         ],
         logo: "https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Crescent-Logo.png",
     }

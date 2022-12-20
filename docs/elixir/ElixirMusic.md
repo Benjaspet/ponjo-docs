@@ -21,8 +21,6 @@ quality, and more -- all without the hassle of having to download and install a 
   - Configure your playlist to start with a custom volume, a custom loop setting, and more.
 - Lyrics
   - Elixir can fetch lyrics for any song you want. This feature is powered by [Genius](https://genius.com/).
-- Quality Support
-  - We're always here to help, with quick & reliable support. Find a bug or want to make a suggestion for a new feature? Don't hesitate to contact us by joining our [Discord server.](https://ponjo.club/discord)
 
 ### Fun Facts About Elixir
 
@@ -30,6 +28,7 @@ quality, and more -- all without the hassle of having to download and install a 
 - Elixir was originally created by Ben Petrillo on May 1, 2021.
     - Magix joined the development team in January 2022.
 - Elixir is written in the Java programming language.
+- As of December 19, 2022, Elixir is in over 200 Discord server with over 84,000 users.
 - More than 235,000 songs have been played using Elixir.
 - Elixir has 4 separate instances, so different people in your server can listen to different tracks.
 - The actual bot application of Elixir was originally used as a moderation bot, but was changed shortly after.
@@ -37,9 +36,18 @@ quality, and more -- all without the hassle of having to download and install a 
 
 ## Privacy Policy
 
-Your privacy is important to us. Our policy is to respect your privacy regarding any information we may collect from you across our websites, services, and utilities. To view Elixir's privacy policy, [click here]().
+Your privacy is important to us. Our policy is to respect your privacy regarding any information we may collect from you across our websites, services, and utilities. To view Elixir's privacy policy, [click here](/elixir/ElixirPrivacy.md).
 
 ## Changelog
+
+::: warning Version 4.1.0 ─ 12/19/2022
+
+- Updates for JDA 5.0.
+- More efficient search queries.
+- Upgraded Soundcloud support.
+- Other minor bug fixes.
+
+:::
 
 ::: warning Version 4.0 ─ 12/14/2021
 

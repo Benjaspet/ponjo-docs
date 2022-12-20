@@ -30,7 +30,7 @@ All data stored by Elixir is exclusively secured within our Canada servers. Whil
 
 ### More Regarding Data Retention & Deletion
 
-If you would like to submit a data access request in order to view all information Elixir has stored with respect to you, the user, you can do so by sending an email to Ben Petrillo, the founder of Ponjo Studios, at [benpetrillo@ponjo.club](mailto:benpetrillo@ponjo.club) or by contacting an administrator in our [Discord server.](https://ponjo.club/discord)
+If you would like to submit a data access request in order to view all information Elixir has stored with respect to you, the user, you can do so by sending an email to Ben Petrillo, the founder of Ponjo Studios, at [benpetrillo@ponjo.club.](mailto:benpetrillo@ponjo.club)
 
 If you would like to request deletion of your data, you can do so by following the same procedure(s) as specified above.
 
@@ -44,4 +44,4 @@ There are very few circumstances in which we would disclose your information to 
 2. With your consent, we may disclose your information.
 
 
-Ponjo Studios stands firmly beside [Discord's privacy policy.](https://discord.com/privacy) Please join our [Discord server](https://ponjo.club/discord) for any questions.
+Ponjo Studios stands firmly beside [Discord's privacy policy.](https://discord.com/privacy)
