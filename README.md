@@ -1,2 +1,2 @@
-# Ponjo-API-Docs
-The official documentation for the Ponjo API.
+## Ponjo Studios Documentation
+The official documentation for Ponjo Studios and all its related services.

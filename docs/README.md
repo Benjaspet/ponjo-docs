@@ -1,41 +1,29 @@
 ---
-meta:
-- name: keywords
-  content: super duper SEO
-- name: theme-color
-  content: "#6da6e8"
-- property: og:title
-  content: Ponjo | Documentation
-- property: og:site_name
-  content: docs.ponjo.club
-- property: og:description
-  content: Welcome to the official documentation for all services created by the Ponjo Team. Here, you can find all the information you'll need on how to integrate your projects with our services & libraries.
-- property: og:image:url
-  content: https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Ponjo.png
-- property: og:image:secure_url
-  content: https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/Ponjo.png
-- name: color-scheme
-  content: light dark
+home: true
+title: Home
+actions:
+  - text: Get Started
+    link: /getting-started.html
+    type: primary
+
+  - text: Explore
+    link: /services.html
+    type: secondary
+
+features:
+  - title: Ponjo API
+    details: A developer utility API to integrate services by Ponjo Studios with your work, with a focus on simplicity.
+  - title: Elixir Music
+    details: Full setup documentation for Elixir, an advanced music bot for Discord, as well as documentation for its API. 
+  - title: Ponjo Pastes
+    details: Complete API documentation for Ponjo Pastes, a simple and easy-to-use code and plain text sharing service.
+
+footer: MIT Licensed | Copyright © 2024 Ben Petrillo.
 ---
 
-## Documentation
+Welcome to the official Ponjo Studios documentation. Here, you can find full documentation for 
+all services created by Ponjo Studios, and how to integrate them into your work. This documentation
+was created and maintained by [Ben Petrillo](https://benpetrillo.dev).
 
-Welcome to the official documentation for all services created by Ponjo Studios. Here, you can find all the information 
-you'll need on how to integrate your projects with our services & libraries. All projects are fully documented.
-
-Ponjo Studios was founded and is currently maintained by [Ben Petrillo.](https://benpetrillo.dev)
-
-### Project Documentation
-
-- [Ponjo API](/ponjo-api/Guide.md)
-- [Advanced Command Handler](/ach/Setup.md)
-- [Elixir Music](/elixir/ElixirMusic.md)
-- [PonjoPastes API](/pastes/PonjoPastes.md)
-- [Game API](/gameapi/GameAPI.md)
-
-### Other Projects
-- [Ponjo Studios Website](https://ponjo.club)
-- [Ponjo CDN](https://cdn.ponjo.club)
-- [Ponjo Pastes](https://pastes.ponjo.club)
-- [Ponjo API Website](https://app.ponjo.club)
-- [Game API](https://gameapi.benpetrillo.dev)
+[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
+[ben-petrillo]: https://benpetrillo.dev
