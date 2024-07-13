@@ -2,7 +2,6 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { appendDatePlugin } from '@vuepress/plugin-append-date'
-import { readingTimePlugin } from '@vuepress/plugin-reading-time'
 
 export default defineUserConfig({
   lang: 'en-US',
@@ -13,10 +12,6 @@ export default defineUserConfig({
   ],
   plugins: [
       appendDatePlugin(),
-      readingTimePlugin(
-          {
-
-          }),
   ],
 
   theme: defaultTheme({
