@@ -10,6 +10,22 @@ actions:
     link: /services.html
     type: secondary
 
+head:
+  - [meta, 
+     { name: theme-color, content: "#3eaf7c" },
+     { name: keywords, content: ben petrillo ponjo studios elixir music ponjo pastes ponjo api },
+     { name: description, content: The official documentation for Ponjo Studios and all its services. },
+     { name: author, content: Ben Petrillo },
+     { name: viewport, content: width=device-width, initial-scale=1 },
+     { name: robots, content: index, follow },
+     { property: og:title, content: Ponjo Studios | Docs },
+     { property: og:site_name, content: docs.benpetrillo.dev },
+     { property: og:description, content: The official documentation for Ponjo Studios and all its services. },
+     { property: og:image, content: https://benpetrillo.dev/favicon.png },
+     { property: og:url, content: https://docs.benpetrillo.dev },
+     { property: og:type, content: website },
+     { property: og:locale, content: en_US }
+  ]
 features:
   - title: Ponjo API
     details: A developer utility API to integrate services by Ponjo Studios with your work, with a focus on simplicity.
