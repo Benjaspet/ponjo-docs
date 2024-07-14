@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"en-US\",\"title\":\"Ponjo Studios\",\"description\":\"The official documentation for Ponjo Studios and its related services.\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"https://benpetrillo.dev/favicon.png\"}]],\"locales\":{}}")
+export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"en-US\",\"title\":\"Ponjo Studios\",\"description\":\"The official documentation for Ponjo Studios and its projects.\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"https://benpetrillo.dev/favicon.png\"}]],\"locales\":{}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
