@@ -1,16 +1,3 @@
 import comp from "/Users/benpetrillo/GitHub/Personal/ponjo-docs/docs/.vuepress/.temp/pages/elixir-music.html.vue"
-const data = JSON.parse("{\"path\":\"/elixir-music.html\",\"title\":\"Elixir Music\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Our Signature Features\",\"slug\":\"our-signature-features\",\"link\":\"#our-signature-features\",\"children\":[{\"level\":3,\"title\":\"Fun Facts About Elixir\",\"slug\":\"fun-facts-about-elixir\",\"link\":\"#fun-facts-about-elixir\",\"children\":[]}]},{\"level\":2,\"title\":\"Privacy Policy\",\"slug\":\"privacy-policy\",\"link\":\"#privacy-policy\",\"children\":[]},{\"level\":2,\"title\":\"Changelog\",\"slug\":\"changelog\",\"link\":\"#changelog\",\"children\":[]}],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"elixir-music.md\",\"readingTime\":{\"minutes\":1.77,\"words\":532}}")
+const data = JSON.parse("{\"path\":\"/elixir-music.html\",\"title\":\"Elixir Music\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Our Signature Features\",\"slug\":\"our-signature-features\",\"link\":\"#our-signature-features\",\"children\":[{\"level\":3,\"title\":\"Fun Facts About Elixir\",\"slug\":\"fun-facts-about-elixir\",\"link\":\"#fun-facts-about-elixir\",\"children\":[]}]},{\"level\":2,\"title\":\"Privacy Policy\",\"slug\":\"privacy-policy\",\"link\":\"#privacy-policy\",\"children\":[]},{\"level\":2,\"title\":\"Changelog\",\"slug\":\"changelog\",\"link\":\"#changelog\",\"children\":[]}],\"git\":{\"updatedTime\":1720914713000,\"contributors\":[{\"name\":\"Benjaspet\",\"email\":\"benpetrillo.bp@gmail.com\",\"commits\":1}]},\"filePathRelative\":\"elixir-music.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
