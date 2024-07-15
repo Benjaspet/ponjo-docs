@@ -17,12 +17,43 @@ export default defineUserConfig({
         link: "/",
       },
       {
+        text: "Ponjo Pastes",
+        children: [
+          {
+            text: "Getting Started",
+            target: "_self",
+            children: [
+              "/ponjo-pastes/api-docs.md",
+              "/ponjo-pastes/wrapper-docs.md",
+            ],
+          },
+          {
+            text: "External Links",
+            children: [
+              {
+                text: "pastes.benpetrillo.dev",
+                link: "https://pastes.benpetrillo.dev",
+              },
+              {
+                text: "Source Code",
+                link: "https://github.com/benjaspet/ponjo-pastes",
+              },
+            ],
+          },
+        ],
+      },
+      {
         text: "GitHub",
         link: "https://github.com/ponjoteam",
       },
       {
         text: "My Portfolio",
         link: "https://benpetrillo.dev",
+      },
+      {
+        text: 'Group',
+        prefix: '/group/',
+        children: ['foo.md', 'bar.md'],
       },
     ],
   }),
