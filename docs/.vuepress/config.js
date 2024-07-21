@@ -17,6 +17,15 @@ export default defineUserConfig({
         link: "/",
       },
       {
+        text: "Elixir Music",
+        children: [
+          {
+            text: "API Docs",
+            link: "/elixir-music/api-docs.md",
+          }
+        ]
+      },
+      {
         text: "Ponjo Pastes",
         children: [
           {
@@ -41,6 +50,19 @@ export default defineUserConfig({
             ],
           },
         ],
+      },
+      {
+        text: "Cypher Network",
+        children: [
+          {
+            text: "Terms of Service",
+            link: "/cypher-network/tos.md",
+          },
+          {
+            text: "Privacy Policy",
+            link: "/cypher-network/privacy-policy.md",
+          },
+        ]
       },
       {
         text: "GitHub",

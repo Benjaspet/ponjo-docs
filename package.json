@@ -1,7 +1,7 @@
 {
   "name": "ponjo-docs",
   "version": "2.0.0",
-  "description": "The official documentation for Ponjo Studios and all its related services.",
+  "description": "The official documentation for Ponjo Studios and its services.",
   "license": "MIT",
   "type": "module",
   "scripts": {
