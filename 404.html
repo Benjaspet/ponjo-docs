@@ -23,17 +23,21 @@
       const systemDarkMode =
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches
-      if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
         document.documentElement.classList.toggle('dark', true)
+        document.documentElement.dataset.theme = 'dark'
       }
     </script>
     <link rel="icon" href="https://benpetrillo.dev/favicon.png"><title>Ponjo Studios</title><meta name="description" content="The official documentation for Ponjo Studios and its projects.">
-    <link rel="preload" href="/assets/style-D_NKyjil.css" as="style"><link rel="stylesheet" href="/assets/style-D_NKyjil.css">
-    <link rel="modulepreload" href="/assets/app-Cf-ZdkGL.js"><link rel="modulepreload" href="/assets/404.html-DvQtCCEj.js">
-    <link rel="prefetch" href="/assets/index.html-CiAWZCTC.js" as="script"><link rel="prefetch" href="/assets/privacy-policy.html-CJxU7O_9.js" as="script"><link rel="prefetch" href="/assets/tos.html-DLd8kz0l.js" as="script"><link rel="prefetch" href="/assets/api-docs.html-C2zpbzGx.js" as="script"><link rel="prefetch" href="/assets/privacy-policy.html-Dymc96-8.js" as="script"><link rel="prefetch" href="/assets/terms-of-service.html-CaNsXn1V.js" as="script"><link rel="prefetch" href="/assets/api-docs.html-Be9EbSEI.js" as="script"><link rel="prefetch" href="/assets/wrapper-docs.html-BZqJTdnT.js" as="script">
+    <link rel="preload" href="/assets/style-BAmuStsJ.css" as="style"><link rel="stylesheet" href="/assets/style-BAmuStsJ.css">
+    <link rel="modulepreload" href="/assets/app-BuYJU3a4.js"><link rel="modulepreload" href="/assets/404.html-qM0oq-KH.js">
+    <link rel="prefetch" href="/assets/index.html-tS4DeeMu.js" as="script"><link rel="prefetch" href="/assets/privacy-policy.html-Nw5iazXI.js" as="script"><link rel="prefetch" href="/assets/tos.html-DBZpxZR1.js" as="script"><link rel="prefetch" href="/assets/api-docs.html-BBMgH81m.js" as="script"><link rel="prefetch" href="/assets/privacy-policy.html-B-Bb3UvD.js" as="script"><link rel="prefetch" href="/assets/terms-of-service.html-VkONoLWV.js" as="script"><link rel="prefetch" href="/assets/api-docs.html-D9mG20T5.js" as="script"><link rel="prefetch" href="/assets/wrapper-docs.html-CCSgKf-L.js" as="script">
   </head>
   <body>
     <div id="app"><!--[--><div class="vp-theme-container" data-v-303656ba><main class="page" data-v-303656ba><div class="theme-default-content" data-v-303656ba><h1 data-v-303656ba>404</h1><blockquote data-v-303656ba>That&#39;s a Four-Oh-Four.</blockquote><a class="route-link" href="/" data-v-303656ba>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
-    <script type="module" src="/assets/app-Cf-ZdkGL.js" defer></script>
+    <script type="module" src="/assets/app-BuYJU3a4.js" defer></script>
   </body>
 </html>
