@@ -6,7 +6,7 @@ export default defineUserConfig({
   title: "Ponjo Studios",
   description: "The official documentation for Ponjo Studios and its projects.",
   head: [
-    ["link", { rel: "icon", href: "https://benpetrillo.dev/favicon.png" }],
+    ["link", { rel: "icon", href: "./assets/favicon.png" }],
   ],
   plugins: [],
   bundler: viteBundler(),
@@ -22,7 +22,7 @@ export default defineUserConfig({
         children: [
           {
             text: "API Docs",
-            link: "/elixir-music/api-docs.md",
+            link: "/elixir-music/api.md",
           }
         ]
       },
@@ -33,7 +33,7 @@ export default defineUserConfig({
             text: "Getting Started",
             target: "_self",
             children: [
-              "/ponjo-pastes/api-docs.md",
+              "/ponjo-pastes/api.md",
               "/ponjo-pastes/wrapper-docs.md",
             ],
           },
