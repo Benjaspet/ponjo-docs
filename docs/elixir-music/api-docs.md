@@ -144,7 +144,7 @@ requests originate, is as follows:
 
 #### Sample Response
 
-```json
+```json title="response.json"
 {
   "guild": "766045633697021973",
   "user": "460177285954142208",

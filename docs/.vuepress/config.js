@@ -9,6 +9,7 @@ export default defineUserConfig({
     ["link", { rel: "icon", href: "https://benpetrillo.dev/favicon.png" }],
   ],
   plugins: [],
+  bundler: viteBundler(),
   theme: defaultTheme({
     logo: "https://benpetrillo.dev/favicon-small.png",
     navbar: [
@@ -79,6 +80,5 @@ export default defineUserConfig({
       },
     ],
   }),
-  lang: "en-US",
-  bundler: viteBundler(),
-})
+  lang: "en-US"
+});
