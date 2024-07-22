@@ -27,7 +27,7 @@ requests originate, is as follows:
   "guild": "766045633697021973",
   "channel": "766045633697021978",
   "user": "460177285954142208",
-  "message": "Successfully joined voice channel."
+  "message": "Successfully joined the voice channel."
 }
 ```
 
@@ -36,6 +36,35 @@ requests originate, is as follows:
 - `400 Bad Request` - Malformed or missing parameters. More often than not, this is because a required parameter was missing.
 - `401 Unauthorized` - You are not authorized to make this request, likely because your API key is invalid or missing from the request body when making a request to a route that requires it.
 - `500 Internal Server Error` - A server-side error occurred. This is likely on our end. If it persists, do not hesitate to contact us at [admin@benpetrillo.dev](mailto:admin@benpetrillo.dev).
+
+### `POST /{guild}/stop`
+
+- Destroy the player in the provided guild.
+
+|  **Parameter**  |     **Type**     |      **Details**      |
+|:---------------:|:----------------:|:---------------------:|
+|     `guild`     |   `snowflake`    |     The guild ID.     |
+|   **Header**    |     **Type**     |    **Description**    |
+| `Authorization` | `Bearer <token>` |     Your API key.     |
+|    **Body**     |     **Type**     |    **Description**    |
+|     `user`      | `Bearer <token>` |     The user ID.      |
+
+#### Sample Response
+
+```json
+{
+  "guild": "766045633697021973",
+  "user": "460177285954142208",
+  "message": "Successfully stopped the player."
+}
+```
+
+#### Status Codes
+- `200 OK` - Successful request.
+- `400 Bad Request` - Malformed or missing parameters. More often than not, this is because a required parameter was missing.
+- `401 Unauthorized` - You are not authorized to make this request, likely because your API key is invalid or missing from the request body when making a request to a route that requires it.
+- `500 Internal Server Error` - A server-side error occurred. This is likely on our end. If it persists, do not hesitate to contact us at [admin@benpetrillo.dev](mailto:admin@benpetrillo.dev).
+
 
 ### `GET /{guild}/nowplaying`
 
