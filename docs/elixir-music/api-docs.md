@@ -9,16 +9,16 @@ requests originate, is as follows:
 
 ### `POST /{guild}/join`
 
-- Connect Elixir to the specified voice channel.
+- Connect Elixir to the specified voice channel in the provided guild, if it exists.
 
 |  **Parameter**  |     **Type**     |      **Details**      |
 |:---------------:|:----------------:|:---------------------:|
 |     `guild`     |   `snowflake`    |     The guild ID.     |
-|   **Header**    |     **Type**     |    **Description**    |
+|   **Header**    |     **Type**     |      **Details**      |
 | `Authorization` | `Bearer <token>` |     Your API key.     |
-|    **Body**     |     **Type**     |    **Description**    |
+|    **Body**     |     **Type**     |      **Details**      |
 |    `channel`    |   `snowflake`    | The voice channel ID. |
-|     `user`      | `Bearer <token>` |     The user ID.      |
+|     `user`      |   `snowflake`    |     The user ID.      |
 
 #### Sample Response
 
@@ -31,23 +31,41 @@ requests originate, is as follows:
 }
 ```
 
-#### Status Codes
-- `200 OK` - Successful request.
-- `400 Bad Request` - Malformed or missing parameters. More often than not, this is because a required parameter was missing.
-- `401 Unauthorized` - You are not authorized to make this request, likely because your API key is invalid or missing from the request body when making a request to a route that requires it.
-- `500 Internal Server Error` - A server-side error occurred. This is likely on our end. If it persists, do not hesitate to contact us at [admin@benpetrillo.dev](mailto:admin@benpetrillo.dev).
+### `POST /{guild}/volume`
+
+- Change the volume of the player in the provided guild, if it exists.
+- The volume must be between 0 and 100.
+
+|  **Parameter**  |     **Type**     |      **Details**      |
+|:---------------:|:----------------:|:---------------------:|
+|     `guild`     |   `snowflake`    |     The guild ID.     |
+|   **Header**    |     **Type**     |      **Details**      |
+| `Authorization` | `Bearer <token>` |     Your API key.     |
+|    **Body**     |     **Type**     |      **Details**      |
+|     `user`      |   `snowflake`    |     The user ID.      |
+|    `volume`     |      `int`       | The volume amplifier. |
+
+#### Sample Response
+
+```json
+{
+  "guild": "766045633697021973",
+  "user": "460177285954142208",
+  "message": "Successfully changed the volume to 45."
+}
+```
 
 ### `POST /{guild}/stop`
 
 - Destroy the player in the provided guild.
 
-|  **Parameter**  |     **Type**     |      **Details**      |
-|:---------------:|:----------------:|:---------------------:|
-|     `guild`     |   `snowflake`    |     The guild ID.     |
-|   **Header**    |     **Type**     |    **Description**    |
-| `Authorization` | `Bearer <token>` |     Your API key.     |
-|    **Body**     |     **Type**     |    **Description**    |
-|     `user`      | `Bearer <token>` |     The user ID.      |
+|  **Parameter**  |     **Type**     |  **Details**  |
+|:---------------:|:----------------:|:-------------:|
+|     `guild`     |   `snowflake`    | The guild ID. |
+|   **Header**    |     **Type**     |  **Details**  |
+| `Authorization` | `Bearer <token>` | Your API key. |
+|    **Body**     |     **Type**     |  **Details**  |
+|     `user`      | `Bearer <token>` | The user ID.  |
 
 #### Sample Response
 
@@ -58,13 +76,6 @@ requests originate, is as follows:
   "message": "Successfully stopped the player."
 }
 ```
-
-#### Status Codes
-- `200 OK` - Successful request.
-- `400 Bad Request` - Malformed or missing parameters. More often than not, this is because a required parameter was missing.
-- `401 Unauthorized` - You are not authorized to make this request, likely because your API key is invalid or missing from the request body when making a request to a route that requires it.
-- `500 Internal Server Error` - A server-side error occurred. This is likely on our end. If it persists, do not hesitate to contact us at [admin@benpetrillo.dev](mailto:admin@benpetrillo.dev).
-
 
 ### `GET /{guild}/nowplaying`
 
@@ -91,8 +102,8 @@ requests originate, is as follows:
 }
 ```
 
-#### Status Codes
+## Status Codes
 - `200 OK` - Successful request.
-- `400 Bad Request` - Malformed or missing parameters. Is the guild ID valid and nonempty?
-- `404 Not Found` - The bot is not currently playing any music in the specified guild.
+- `400 Bad Request` - Malformed or missing parameters. More often than not, this is because a required parameter was missing.
+- `401 Unauthorized` - You are not authorized to make this request, likely because your API key is invalid or missing from the request body when making a request to a route that requires it.
 - `500 Internal Server Error` - A server-side error occurred. This is likely on our end. If it persists, do not hesitate to contact us at [admin@benpetrillo.dev](mailto:admin@benpetrillo.dev).
