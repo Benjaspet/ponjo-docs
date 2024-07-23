@@ -1,26 +1,52 @@
 # API Documentation
 
-Elixir Music has its own public API. The base URL of the API, where all 
-requests originate, is as follows:
+Elixir Music has an API that allows you to access music queues, custom playlists,
+and more from your own applications. This documentation will guide you through
+the available endpoints and how to use them. The base URL of the API is as follows:
 
 [https://elixir.benpetrillo.dev/api/v1](https://elixir.benpetrillo.dev)
 
+## Authentication
+
+*Read-only* endpoints do not require authentications. On the contrary, it is necessary
+for us to enforce authentication on *write* endpoints to ensure that only the appropriate
+users can modify the state of the player in a guild. In almost all cases, users with
+*administrative privileges* in a guild will be able to generate an API key to use
+the endpoints that modify the state of the player in a guild.
+
+API keys are bound to a `user.id` and a `guild.id`. This means that each API
+key is restricted for use in a single guild. To generate an API key, you must
+be an administrator in the guild in which you wish to generate the key.
+
+To generate an API key, run `/genkey` in the guild for which the key will be associated.
+Please note: API keys are sensitive information and should be treated as such. Do not
+share your API key with anyone, as it can be used to modify the state of the player
+in your guild.
+
+API keys are generate on a one-time basis. If you happen to lose yours, contact us
+at [admin@benpetrillo.dev](mailto:admin@benpetrillo.dev) with your guild ID and user ID.
+
+
+
 ## Endpoints
 
-### `POST /{guild}/join`
+### <Badge type="warning" text="POST"/> /[{guild.id}](https://discord.com/developers/docs/resources/guild#guild-object)/join
 
-- Connect Elixir to the specified voice channel in the provided guild, if it exists.
+Connect Elixir to a voice channel in the provided guild. Elixir *must be* in the same guild as the 
+voice channel to which it is connecting. Will return a `400 Bad Request` if the voice channel
+or guild is invalid or not found.
 
-|  **Parameter**  |     **Type**     |      **Details**      |
-|:---------------:|:----------------:|:---------------------:|
-|     `guild`     |   `snowflake`    |     The guild ID.     |
-|   **Header**    |     **Type**     |      **Details**      |
-| `Authorization` | `Bearer <token>` |     Your API key.     |
-|    **Body**     |     **Type**     |      **Details**      |
-|    `channel`    |   `snowflake`    | The voice channel ID. |
-|     `user`      |   `snowflake`    |     The user ID.      |
 
-#### Sample Response
+|  String Param   |                         Description                         | Required |
+|:---------------:|:-----------------------------------------------------------:|:--------:|
+|   `guild.id`    |        The guild in which the voice channel resides.        |   yes    |
+|     Header      |                         Description                         | Required |
+| `Authorization` |                      `Bearer {token}`                       |   yes    |
+|  Request Body   |                         Description                         | Required |
+|  `channel.id`   |     The voice channel ID to which Elixir will connect.      |   yes    |
+|    `user.id`    | The id of the user who requested to join the voice channel. |   yes    |
+
+Sample Response
 
 ```json
 {
@@ -31,21 +57,21 @@ requests originate, is as follows:
 }
 ```
 
-### `POST /{guild}/volume`
+### <Badge type="warning" text="POST"/> /[{guild.id}](https://discord.com/developers/docs/resources/guild#guild-object)/volume
 
-- Change the volume of the player in the provided guild, if it exists.
-- The volume must be between 0 and 100.
+Change the volume of the audio player in a guild. The volume must be an `int` between
+0 and 100, inclusive. Will return a `400 Bad Request` if the volume is out of range.
 
-|  **Parameter**  |     **Type**     |      **Details**      |
-|:---------------:|:----------------:|:---------------------:|
-|     `guild`     |   `snowflake`    |     The guild ID.     |
-|   **Header**    |     **Type**     |      **Details**      |
-| `Authorization` | `Bearer <token>` |     Your API key.     |
-|    **Body**     |     **Type**     |      **Details**      |
-|     `user`      |   `snowflake`    |     The user ID.      |
-|    `volume`     |      `int`       | The volume amplifier. |
+|  String Param   |               Description                | Required? |
+|:---------------:|:----------------------------------------:|:---------:|
+|   `guild.id`    | The guild in which to change the volume. |    yes    |
+| Request Header  |               Description                |           |
+| `Authorization` |             `Bearer {token}`             |    yes    |
+|  Request Body   |               Description                |           |
+|    `user.id`    |  The user associated with the API key.   |    yes    |
+|    `volume`     |    The volume amplifier, as an `int`.    |    yes    |
 
-#### Sample Response
+Sample Response
 
 ```json
 {
@@ -55,21 +81,24 @@ requests originate, is as follows:
 }
 ```
 
-### `POST /{guild}/play`
+### <Badge type="warning" text="POST"/> /[{guild.id}](https://discord.com/developers/docs/resources/guild#guild-object)/play
 
-- Play a track or playlist in the provided guild. If a track is already playing, the track will be added to the queue.
-- The `query` parameter can be a supported track URL or search query.
+Play a track or playlist in a guild. The `query` parameter can be a supported track URL
+or an arbitrary search query. If the query is a search query, the first result that is found
+using our backend will be played. Both playlists and singular tracks are supported.
+Will return a `400 Bad Request` if the query is invalid, or a `404 Not Found` if no 
+track is found.
 
-|  **Parameter**  |     **Type**     |       **Details**        |
-|:---------------:|:----------------:|:------------------------:|
-|     `guild`     |   `snowflake`    |      The guild ID.       |
-|   **Header**    |     **Type**     |       **Details**        |
-| `Authorization` | `Bearer <token>` |      Your API key.       |
-|    **Body**     |     **Type**     |       **Details**        |
-|     `user`      |   `snowflake`    |       The user ID.       |
-|     `query`     |     `string`     | The URL or search query. |
+|  String Param   |               Description                | Required? |
+|:---------------:|:----------------------------------------:|:---------:|
+|   `guild.id`    | The guild in which to change the volume. |    yes    |
+| Request Header  |               Description                |           |
+| `Authorization` |             `Bearer {token}`             |    yes    |
+|  Request Body   |               Description                |           |
+|    `user.id`    |  The user associated with the API key.   |    yes    |
+|     `query`     |     The URL or search query to play.     |    yes    |
 
-#### Sample Response
+Sample Response
 
 ```json
 [
@@ -112,7 +141,7 @@ requests originate, is as follows:
 ]
 ```
 
-#### Sample Response #2
+Sample Response #2
 
 ```json
 {
@@ -130,21 +159,21 @@ requests originate, is as follows:
 ```
 
 
-### `POST /{guild}/stop`
+### <Badge type="warning" text="POST"/> /[{guild.id}](https://discord.com/developers/docs/resources/guild#guild-object)/stop
 
-- Destroy the player in the provided guild.
+Destroy the audio player in a guild.
 
-|  **Parameter**  |     **Type**     |  **Details**  |
-|:---------------:|:----------------:|:-------------:|
-|     `guild`     |   `snowflake`    | The guild ID. |
-|   **Header**    |     **Type**     |  **Details**  |
-| `Authorization` | `Bearer <token>` | Your API key. |
-|    **Body**     |     **Type**     |  **Details**  |
-|     `user`      |   `snowflake`    | The user ID.  |
+|  String Param   |                   Description                   | Required? |
+|:---------------:|:-----------------------------------------------:|:---------:|
+|   `guild.id`    | The guild in which to destroy the audio player. |    yes    |
+| Request Header  |                   Description                   |           |
+| `Authorization` |                `Bearer {token}`                 |    yes    |
+|  Request Body   |                   Description                   |           |
+|    `user.id`    |      The user associated with the API key.      |    yes    |
 
-#### Sample Response
+Sample Response
 
-```json title="response.json"
+```json
 {
   "guild": "766045633697021973",
   "user": "460177285954142208",
@@ -152,15 +181,18 @@ requests originate, is as follows:
 }
 ```
 
-### `GET /{guild}/nowplaying`
+### <Badge type="info" text="GET"/> /[{guild.id}](https://discord.com/developers/docs/resources/guild#guild-object)/nowplaying
 
-- Get the track that is currently playing in a guild.
+Get the data of the track that is currently playing in a guild. Will return a `410 Gone` if
+no track is currently playing.
 
-| **Parameter** |     **Type**     |      **Details**      |
-|:-------------:|:----------------:|:---------------------:|
-|    `guild`    |   `snowflake`    |     The guild ID.     |
+|  String Param   |                  Description                   | Required? |
+|:---------------:|:----------------------------------------------:|:---------:|
+|   `guild.id`    | The guild in which to fetch the current track. |    yes    |
+| Request Header  |                  Description                   |           |
+| `Authorization` |                `Bearer {token}`                |    no     |
 
-#### Sample Response
+Sample Response
 
 ```json
 {
@@ -177,8 +209,8 @@ requests originate, is as follows:
 }
 ```
 
-## Status Codes
+## HTTP Status Codes
 - `200 OK` - Successful request.
-- `400 Bad Request` - Malformed or missing parameters. More often than not, this is because a required parameter was missing.
-- `401 Unauthorized` - You are not authorized to make this request, likely because your API key is invalid or missing from the request body when making a request to a route that requires it.
+- `400 Bad Request` - Malformed or missing parameters. More often than not, this is because a required parameter was missing, either in the URL itself or in the request body. Double-check the documentation.
+- `401 Unauthorized` - You are not authorized to make this request, likely because your API key is invalid or missing from the request body when making a request to a route that requires it. Make sure your API key is associated with the guild you are trying to access.
 - `500 Internal Server Error` - A server-side error occurred. This is likely on our end. If it persists, do not hesitate to contact us at [admin@benpetrillo.dev](mailto:admin@benpetrillo.dev).

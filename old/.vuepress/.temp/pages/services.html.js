@@ -1,3 +1,0 @@
-import comp from "/Users/benpetrillo/GitHub/Personal/ponjo-docs/docs/.vuepress/.temp/pages/services.html.vue"
-const data = JSON.parse("{\"path\":\"/services.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Ponjo Studios Services\",\"slug\":\"ponjo-studios-services\",\"link\":\"#ponjo-studios-services\",\"children\":[]},{\"level\":2,\"title\":\"Additional\",\"slug\":\"additional\",\"link\":\"#additional\",\"children\":[]}],\"git\":{\"updatedTime\":1720914713000,\"contributors\":[{\"name\":\"Benjaspet\",\"email\":\"benpetrillo.bp@gmail.com\",\"commits\":1}]},\"filePathRelative\":\"services.md\"}")
-export { comp, data }
