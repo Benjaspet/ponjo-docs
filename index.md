@@ -1,6 +1,20 @@
 ---
 layout: home
-
+title: Home • Ponjo Studios
+description: The official documentation for Ponjo Studios and its services. A development team committed to building innovative software.
+head:
+  - - meta
+    - property: og:title
+      content: Home • Ponjo Studios
+  - - meta
+    - property: og:site_name
+      content: Ponjo Studios
+  - - meta
+    - property: og:description
+      content: The official documentation for Ponjo Studios and its services. A development team committed to building innovative software.
+  - - meta
+    - name: theme-color
+      content: "#4295f4"
 hero:
   name: "Ponjo Studios"
   text: "Documentation"
@@ -15,7 +29,6 @@ hero:
     - theme: alt
       text: Meet Our Team
       link: https://ponjo.benpetrillo.dev
-
 features:
   - title: Ponjo.Pastes
     details: Your go-to platform for sharing code snippets with ease and efficiency. Join the community that offers a seamless experience to store, manage, and share your code in a few clicks.

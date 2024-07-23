@@ -1,6 +1,6 @@
-import * as vitepress from "vitepress";
+import { defineConfig } from "vitepress";
 
-export default vitepress.defineConfig({
+export default defineConfig({
   title: "Ponjo Studios",
   description: "The official documentation for Ponjo Studios and its services.",
   head: [
@@ -22,6 +22,13 @@ export default vitepress.defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Elixir Music', link: '/docs/elixir-music/api' },
+      {
+        text: "Cypher Network",
+        items: [
+          {text: "Privacy Policy", link: "/docs/cypher-network/privacy-policy"},
+          {text: "Terms of Service", link: "/docs/cypher-network/tos"},
+        ],
+      },
       {
         text: "External Links",
         items: [

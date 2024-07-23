@@ -1,11 +1,26 @@
 ---
+title: Elixir API
+description: Documentation for the Elixir Music API. Access music queues, custom playlists, and more from your own applications.
+head:
+  - - meta
+    - property: "og:title"
+      content: "Elixir Music API"
+  - - meta
+    - property: "og:site_name"
+      content: "Ponjo Studios"
+  - - meta
+    - property: "og:description"
+      content: "Documentation for the Elixir Music API. Access music queues, custom playlists, and more from your own applications."
+  - - meta
+    - name: theme-color
+      content: "#4295f4"
+      
 prev:
-  text: 'Markdown'
-  link: '/'
-
+  text: Setup Guide
+  link: "/docs/elixir-music/setup-guide"
 next:
-    text: 'Custom Containers'
-    link: '/docs/misc/our-projects'
+    text: "Privacy Policy"
+    link: "/docs/elixir-music/privacy-policy"
 ---
 
 # API Documentation
