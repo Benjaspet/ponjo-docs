@@ -50,8 +50,6 @@ const members = [
       { icon: "github", link: "https://github.com/benjaspet" },
       { icon: "linkedin", link: "https://www.linkedin.com/in/ben-petrillo/" },
       { icon: { svg: '<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="copy" class="svg-inline--fa fa-copy " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"></path></svg>' }, link: "https://benpetrillo.dev" }
-      
-
     ]
   },
   {
@@ -64,7 +62,18 @@ const members = [
       { icon: "github", link: "https://github.com/kingrainbow44" },
       { icon: "discord", link: "https://discord.com/users/252090676068614145" }
     ]
-  }
+  },
+  {
+    avatar: "https://cdn.discordapp.com/attachments/1146271697654267904/1265139392838631485/il_fullxfull.png?ex=66a06c60&is=669f1ae0&hm=a9201f52f988b4ca976947f0165cf3f89df33a5ca3ce02ff6571888b41a32a88&",
+    name: "Leqend",
+    title: "Software Engineer, Cypher Network",
+    sponsor: "https://github.com/Leqends",
+    actionText: "Support Me",
+    links: [
+      { icon: "github", link: "https://github.com/Leqends" },
+      { icon: "discord", link: "https://discord.com/users/368571560207843329" }
+    ]
+  },
 ]
 </script>
 
