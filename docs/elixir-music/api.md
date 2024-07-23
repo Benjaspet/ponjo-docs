@@ -1,3 +1,13 @@
+---
+prev:
+  text: 'Markdown'
+  link: '/'
+
+next:
+    text: 'Custom Containers'
+    link: '/docs/misc/our-projects'
+---
+
 # API Documentation
 
 Elixir Music has an API that allows you to access music queues, custom playlists,
