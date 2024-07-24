@@ -1,4 +1,13 @@
-import DefaultTheme from "vitepress/theme";
+// .vitepress/theme/index.js
+import DefaultTheme from 'vitepress/theme'
+import ImageSlider from "./components/ImageSlider.vue";
+
 import "./custom.css";
 
-export default DefaultTheme;
+/** @type {import('vitepress').Theme} */
+export default {
+    extends: DefaultTheme,
+    enhanceApp({ app }) {
+        app.component("ImageSlider", ImageSlider)
+    }
+}

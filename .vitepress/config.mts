@@ -6,6 +6,10 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", type: "image/png", href: "https://benpetrillo.dev/favicon.png" }],
   ],
+  markdown: {
+    lineNumbers: true
+  },
+
   themeConfig: {
 
     search: {
@@ -21,13 +25,30 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Elixir Music', link: '/docs/elixir-music/api' },
       {
-        text: "Cypher Network",
+        text: "Our Projects",
         items: [
-          {text: "Privacy Policy", link: "/docs/cypher-network/privacy-policy"},
-          {text: "Terms of Service", link: "/docs/cypher-network/tos"},
-        ],
+          { text: "Elixir Music", link: "/docs/elixir-music/setup" },
+          { text: "Ponjo.Pastes", link: "/docs/ponjo-pastes/about" },
+          { text: "Cypher Network", link: "/docs/cypher-network/setup" },
+        ]
+      },
+      {
+        text: "Personal Projects",
+        items: [
+          { text: "Hexagonal Reversi", link: "/docs/personal-projects/hexagonal-reversi" },
+          { text: "Five Guesses", link: "/docs/personal-projects/five-guesses" },
+          { text: "Helios Practice", link: "/docs/personal-projects/helios-practice" }
+        ]
+      },
+      {
+        text: "Privacy/Terms",
+        items: [
+          { text: "Elixir Music Privacy Policy", link: "/docs/elixir-music/privacy-policy" },
+          { text: "Elixir Music Terms of Service", link: "/docs/elixir-music/tos" },
+          { text: "Cypher Network Privacy Policy", link: "/docs/cypher-network/privacy-policy" },
+          { text: "Cypher Network Terms of Service", link: "/docs/cypher-network/tos" }
+        ]
       },
       {
         text: "External Links",
@@ -42,9 +63,20 @@ export default defineConfig({
       {
         text: "Elixir Music",
         items: [
-          { text: "API Documentation", link: "/docs/elixir-music/api"}
+          { text: "Setup & Usage", link: "/docs/elixir-music/setup"},
+          { text: "API Documentation", link: "/docs/elixir-music/api"},
+          { text: "Privacy Policy", link: "/docs/elixir-music/privacy-policy"},
+          { text: "Terms of Service", link: "/docs/elixir-music/tos"},
         ]
       },
+      {
+        text: "Cypher Network",
+        items: [
+          { text: "Setup & Usage", link: "/docs/cypher-network/setup"},
+          { text: "Privacy Policy", link: "/docs/cypher-network/privacy-policy"},
+          { text: "Terms of Service", link: "/docs/cypher-network/tos"},
+        ]
+      }
     ],
 
     socialLinks: [
