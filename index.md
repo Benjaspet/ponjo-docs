@@ -64,7 +64,7 @@ const members = [
     ]
   },
   {
-    avatar: "https://cdn.discordapp.com/attachments/1146271697654267904/1265139392838631485/il_fullxfull.png?ex=66a06c60&is=669f1ae0&hm=a9201f52f988b4ca976947f0165cf3f89df33a5ca3ce02ff6571888b41a32a88&",
+    avatar: "./leqends-avatar.png",
     name: "Leqend",
     title: "Software Engineer, Cypher Network",
     sponsor: "https://github.com/Leqends",

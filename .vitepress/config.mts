@@ -37,7 +37,8 @@ export default defineConfig({
         text: "Personal Projects",
         items: [
           { text: "Hexagonal Reversi", link: "/docs/personal-projects/hexagonal-reversi" },
-          { text: "Five Guesses", link: "/docs/personal-projects/five-guesses" },
+          { text: "Fakebook Web Crawler", link: "/docs/personal-projects/fakebook-web-crawler.md" },
+          { text: "Dur.ai", link: "/docs/personal-projects/durai" },
           { text: "Helios Practice", link: "/docs/personal-projects/helios-practice" }
         ]
       },
@@ -75,6 +76,15 @@ export default defineConfig({
           { text: "Setup & Usage", link: "/docs/cypher-network/setup"},
           { text: "Privacy Policy", link: "/docs/cypher-network/privacy-policy"},
           { text: "Terms of Service", link: "/docs/cypher-network/tos"},
+        ]
+      },
+      {
+        text: "Personal Projects",
+        items: [
+          { text: "Hexagonal Reversi", link: "/docs/personal-projects/hexagonal-reversi"},
+          { text: "Fakebook Web Crawler", link: "/docs/personal-projects/fakebook-web-crawler"},
+          { text: "Dur.ai", link: "/docs/personal-projects/durai"},
+          { text: "Helios Practice", link: "/docs/personal-projects/helios-practice"},
         ]
       }
     ],
