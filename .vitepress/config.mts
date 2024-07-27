@@ -36,6 +36,7 @@ export default defineConfig({
       {
         text: "Personal Projects",
         items: [
+          { text: "EONET UI", link: "/docs/personal-projects/eonet-ui" },
           { text: "Hexagonal Reversi", link: "/docs/personal-projects/hexagonal-reversi" },
           { text: "Fakebook Web Crawler", link: "/docs/personal-projects/fakebook-web-crawler.md" },
           { text: "Dur.ai", link: "/docs/personal-projects/durai" },
