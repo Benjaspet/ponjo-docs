@@ -2,16 +2,16 @@
 title: Dur.ai
 description: Documentation for the Elixir Music API. Access music queues, custom playlists, and more from your own applications.
 head:
-    - - meta
+  - - meta
     - property: "og:title"
       content: "Dur.ai • Language Model"
-    - - meta
+  - - meta
     - property: "og:site_name"
       content: "Ponjo Studios"
-    - - meta
+  - - meta
     - property: "og:description"
       content: Dur.ai is a large language model designed to assist and provide academic support to individuals. It specializes in understanding and generating human-like text, enabling it to converse with users, answer questions, provide information, and even create content on a wide range of topics.
-    - - meta
+  - - meta
     - name: theme-color
       content: "#4295f4"
 ---
