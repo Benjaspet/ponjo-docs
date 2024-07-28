@@ -39,7 +39,7 @@ export default defineConfig({
           { text: "EONET UI", link: "/docs/personal-projects/eonet-ui" },
           { text: "Hexagonal Reversi", link: "/docs/personal-projects/hexagonal-reversi" },
           { text: "Fakebook Web Crawler", link: "/docs/personal-projects/fakebook-web-crawler.md" },
-          { text: "Dur.ai", link: "/docs/personal-projects/durai" },
+          { text: "Dur.ai • Language Model", link: "/docs/personal-projects/durai" },
           { text: "Helios Practice", link: "/docs/personal-projects/helios-practice" }
         ]
       },
@@ -84,7 +84,7 @@ export default defineConfig({
         items: [
           { text: "Hexagonal Reversi", link: "/docs/personal-projects/hexagonal-reversi"},
           { text: "Fakebook Web Crawler", link: "/docs/personal-projects/fakebook-web-crawler"},
-          { text: "Dur.ai", link: "/docs/personal-projects/durai"},
+          { text: "Dur.ai • Language Model", link: "/docs/personal-projects/durai"},
           { text: "Helios Practice", link: "/docs/personal-projects/helios-practice"},
         ]
       }
