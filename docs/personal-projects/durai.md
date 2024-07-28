@@ -1,6 +1,6 @@
 # Dur.ai
 
-Dur.ai is a large language model designed to assist and provide academic support to individuals. 
+[Dur.ai](https://durai.benpetrillo.dev) is a large language model designed to assist and provide academic support to individuals. 
 It specializes in understanding and generating human-like text, enabling it to converse with users,
 answer questions, provide information, and even create content on a wide range of topics.
 It can help with various academic tasks, including but not limited to:
@@ -23,6 +23,8 @@ Dur.ai's primary objective is to provide accurate and reliable information, help
 deeper understanding of their subject matter and improve their academic performance. It is constantly
 learning and updating its knowledge base, ensuring that its responses are always up-to-date and
 relevant.
+
+You can access Dur.ai at [durai.benpetrillo.dev](https://durai.benpetrillo.dev).
 
 :::tip Fun Fact
 The content above was written by the Dur.ai model itself!
