@@ -24,15 +24,7 @@ export default defineConfig({
     logo: "/favicon-small.png",
 
     nav: [
-      { text: 'Home', link: '/' },
-      {
-        text: "Our Projects",
-        items: [
-          { text: "Elixir Music", link: "/docs/elixir-music/setup" },
-          { text: "Ponjo.Pastes", link: "/docs/ponjo-pastes/about" },
-          { text: "Cypher Network", link: "/docs/cypher-network/setup" },
-        ]
-      },
+      { text: "Home", link: "/" },
       {
         text: "Personal Projects",
         items: [
@@ -41,15 +33,6 @@ export default defineConfig({
           { text: "Fakebook Web Crawler", link: "/docs/personal-projects/fakebook-web-crawler.md" },
           { text: "Dur.ai • Language Model", link: "/docs/personal-projects/durai" },
           { text: "Helios Practice", link: "/docs/personal-projects/helios-practice" }
-        ]
-      },
-      {
-        text: "Privacy/Terms",
-        items: [
-          { text: "Elixir Music Privacy Policy", link: "/docs/elixir-music/privacy-policy" },
-          { text: "Elixir Music Terms of Service", link: "/docs/elixir-music/tos" },
-          { text: "Cypher Network Privacy Policy", link: "/docs/cypher-network/privacy-policy" },
-          { text: "Cypher Network Terms of Service", link: "/docs/cypher-network/tos" }
         ]
       },
       {
@@ -67,16 +50,21 @@ export default defineConfig({
         items: [
           { text: "Setup & Usage", link: "/docs/elixir-music/setup"},
           { text: "API Documentation", link: "/docs/elixir-music/api"},
-          { text: "Privacy Policy", link: "/docs/elixir-music/privacy-policy"},
-          { text: "Terms of Service", link: "/docs/elixir-music/tos"},
+          { text: "Privacy Policy", link: "/docs/elixir-music/privacy"}
+        ]
+      },
+      {
+        text: "Ponjo.Pastes",
+        items: [
+          { text: "About The Service", link: "/docs/ponjo-pastes/about"},
+          { text: "API Documentation", link: "/docs/ponjo-pastes/api"},
         ]
       },
       {
         text: "Cypher Network",
         items: [
           { text: "Setup & Usage", link: "/docs/cypher-network/setup"},
-          { text: "Privacy Policy", link: "/docs/cypher-network/privacy-policy"},
-          { text: "Terms of Service", link: "/docs/cypher-network/tos"},
+          { text: "Privacy Policy", link: "/docs/cypher-network/privacy-policy"}
         ]
       },
       {

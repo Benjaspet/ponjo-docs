@@ -25,7 +25,7 @@ hero:
   actions:
     - theme: brand
       text: Our Projects
-      link: /docs/misc/our-projects
+      link: /docs/our-projects
     - theme: alt
       text: Meet Our Team
       link: https://ponjo.benpetrillo.dev

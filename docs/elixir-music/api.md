@@ -51,8 +51,6 @@ in your guild.
 API keys are generate on a one-time basis. If you happen to lose yours, contact us
 at [admin@benpetrillo.dev](mailto:admin@benpetrillo.dev) with your guild ID and user ID.
 
-
-
 ## Endpoints
 
 ### <Badge type="warning" text="POST"/> /[{guild.id}](https://discord.com/developers/docs/resources/guild#guild-object)/join
