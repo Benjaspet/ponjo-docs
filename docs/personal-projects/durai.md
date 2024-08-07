@@ -42,7 +42,11 @@ deeper understanding of their subject matter and improve their academic performa
 learning and updating its knowledge base, ensuring that its responses are always up-to-date and
 relevant.
 
-[durai.benpetrillo.dev](https://durai.benpetrillo.dev).
+::: danger STOP! READ FIRST!
+Dur.ai has been discontinued and is no longer hosted due to the high cost of maintaining the model.
+The screenshots and information provided her are for reference purposes as to what the project
+used to be. To learn more, [contact me](mailto:admin@benpetrillo.dev).
+:::
 
 :::tip Fun Fact
 The content above was written by the Dur.ai model itself!

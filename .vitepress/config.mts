@@ -28,6 +28,7 @@ export default defineConfig({
       {
         text: "Personal Projects",
         items: [
+          { text: "PokéVault", link: "/docs/personal-projects/pokevault" },
           { text: "EONET UI", link: "/docs/personal-projects/eonet-ui" },
           { text: "Hexagonal Reversi", link: "/docs/personal-projects/hexagonal-reversi" },
           { text: "Fakebook Web Crawler", link: "/docs/personal-projects/fakebook-web-crawler.md" },
@@ -72,6 +73,7 @@ export default defineConfig({
         items: [
           { text: "Hexagonal Reversi", link: "/docs/personal-projects/hexagonal-reversi"},
           { text: "Fakebook Web Crawler", link: "/docs/personal-projects/fakebook-web-crawler"},
+          { text: "PokéVault", link: "/docs/personal-projects/pokevault" },
           { text: "Dur.ai • Language Model", link: "/docs/personal-projects/durai"},
           { text: "Helios Practice", link: "/docs/personal-projects/helios-practice"},
         ]
