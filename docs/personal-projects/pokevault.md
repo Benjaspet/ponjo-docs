@@ -18,3 +18,11 @@ View detailed information about a card:
 Automatically generated card suggestions:
 
 ![PokéVault Card Suggestions](/screenshots/pokevault/similar-cards.jpg)
+
+View all sets in the trading card game:
+
+![PokéVault Sets](/screenshots/pokevault/set-list.png)
+
+View details about a specific set:
+
+![PokéVault Set Details](/screenshots/pokevault/set-info.jpg)
